@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>thanks - Nature's Way</title>
+    <link rel="shortcut icon" type="image/x-icon" href="img/leaf.png">       
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet">
+
+    <!-- Icon Font Stylesheet -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+    
+    <style>
+        h1 {
+            color: #4CAF50; /* Adjust color to match your brand */
+        }
+        .thank-you-bg {
+            background-color: #f8f9fa; /* Light gray background */
+            border: 1px solid #e9ecef; /* Light border */
+            border-radius: 8px; /* Rounded corners */
+            padding: 20px; /* Padding inside the card */
+            margin-top: 20px; /* Margin to separate from other content */
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Shadow for depth */
+        }
+        .order-details {
+            margin: 20px 0;
+        }
+        .order-details p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- Navbar start -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <a class="navbar-brand" href="/"><h1 class="text-primary display-6">Fruitables</h1></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/brand">Brand</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="pagesDropdown" role="button" data-bs-toggle="dropdown">
+                        Pages
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/cart">Cart</a></li>
+                        <li><a class="dropdown-item" href="/checkout">Checkout</a></li>
+                        <!-- Additional dropdown items if needed -->
+                    </ul>
+                </li>
+
+            </ul>
+            <div class="d-flex ms-3">
+                <button class="btn btn-outline-primary me-3" data-bs-toggle="modal" data-bs-target="#searchModal">
+                    <i class="fas fa-search"></i>
+                </button>
+                <a href="/cart" class="position-relative me-3">
+                    <i class="fa fa-shopping-bag fa-2x"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-user fa-2x"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</nav>
+<!-- Navbar End -->
+
+<!-- Modal Search Start -->
+<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content rounded-0">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body d-flex align-items-center">
+                <div class="input-group w-75 mx-auto">
+                    <input type="search" class="form-control p-3" placeholder="keywords">
+                    <span class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Search End -->
+
+<div class="container">
+    <div class="thank-you-bg">
+        <h2><strong>Order ID:</strong> <%= id %></h2>
+        <h2>Thank You <%= name %> for Your Order!</h2>
+        <p>Your order has been placed successfully.</p>
+        <div class="order-details">
+            <h2>Order Details</h2>
+            <p><strong>Name:</strong> <%= name %></p>
+            <p><strong>Email:</strong> <%= email %></p>
+            <p><strong>Phone:</strong> <%= phone %></p>
+            <p><strong>City:</strong> <%= city %></p>
+            <p><strong>Address:</strong> <%= address %></p>
+            <p><strong>Note:</strong> <%= note %></p>
+            <p><strong>Cost:</strong> <%= (parseInt(cost) + 40) %> LE</p>
+            <p><strong>Date:</strong> <%= new Date(date).toLocaleString() %></p>
+        </div>
+        <div class="thank-you">
+            <p>We appreciate your business and hope to serve you again soon!</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="">
+            <br>
+            <a href="/" class="btn btn-primary">
+                Continue shopping
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!-- JavaScript Libraries -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="lib/lightbox/js/lightbox.min.js"></script>
+<script src="lib/owlcarousel/owl.carousel.min.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&buyer-country=US&currency=USD&components=buttons&enable-funding=venmo" data-sdk-integration-source="developer-studio"></script>
+<script>
+    paypal.Buttons().render('#paypal-button-container');
+</script>
+
+<!-- Template Javascript -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Nature's Way</title>
+        <link rel="shortcut icon" type="image/x-icon" href="img/leaf.png">       
+
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="" name="keywords">
+        <meta content="" name="description">
+
+        <!-- Google Web Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@600;800&display=swap" rel="stylesheet"> 
+
+        <!-- Icon Font Stylesheet -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+        <!-- Libraries Stylesheet -->
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+
+        <!-- Customized Bootstrap Stylesheet -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Spinner Start -->
+        <div id="spinner" class="show w-100 vh-100 bg-white position-fixed translate-middle top-50 start-50  d-flex align-items-center justify-content-center">
+            <div class="spinner-grow text-primary" role="status"></div>
+        </div>
+        <!-- Spinner End -->
+
+
+        <!-- Navbar start -->
+        <div class="container-fluid fixed-top">
+            <div class="container topbar bg-primary d-none d-lg-block">
+                <div class="d-flex justify-content-between">
+                    <div class="top-info ps-2">
+                        <small class="me-3"><i class="fas fa-map-marker-alt me-2 text-secondary"></i> <a href="#" class="text-white">SUEZ, EGYPT</a></small>
+                        <small class="me-3"><i class="fas fa-envelope me-2 text-secondary"></i><a href="#" class="text-white">abdullahelsaied00@gmail.com</a></small>
+                    </div>
+                    <div class="top-link pe-2">
+                        <a href="#" class="text-white"><small class="text-white mx-2">Privacy Policy</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white mx-2">Terms of Use</small>/</a>
+                        <a href="#" class="text-white"><small class="text-white ms-2">Sales and Refunds</small></a>
+                    </div>
+                </div>
+            </div>
+            <div class="container px-0">
+                <nav class="navbar navbar-light bg-white navbar-expand-xl">
+                    <a href="/" class="navbar-brand"><h1 class="text-primary display-6">Nature's Way</h1></a>
+                    <button class="navbar-toggler py-2 px-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                        <span class="fa fa-bars text-primary"></span>
+                    </button>
+                    <div class="collapse navbar-collapse bg-white" id="navbarCollapse">
+                        <div class="navbar-nav mx-auto">
+                            <a href="/" class="nav-item nav-link active">Home</a>
+                            <a href="/about" class="nav-item nav-link">About</a>
+                            <a href="/brand" class="nav-item nav-link">Brand</a>
+                            <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">pages</a>
+                                <div class="dropdown-menu m-0 bg-secondary rounded-0">
+                                    <a href="/cart" class="dropdown-item">Cart</a>
+                                    <a href="/checkout" class="dropdown-item">Checkout</a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex m-3 me-0">
+                            <button class="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i class="fas fa-search text-primary"></i></button>
+                            <a href="/cart" class="position-relative me-4 my-auto">
+                                <i class="fa fa-shopping-bag fa-2x"></i>
+                            </a>
+                            <a href="#" class="my-auto">
+                                <i class="fas fa-user fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Navbar End -->
+
+
+        <!-- Modal Search Start -->
+        <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen">
+                <div class="modal-content rounded-0">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Search by keyword</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body d-flex align-items-center">
+                        <div class="input-group w-75 mx-auto d-flex">
+                            <input type="search" class="form-control p-3" placeholder="keywords" aria-describedby="search-icon-1">
+                            <span id="search-icon-1" class="input-group-text p-3"><i class="fa fa-search"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal Search End -->
+
+
+    <!-- Hero Start -->
+    <div class="container-fluid py-5 mb-5 hero-header">
+        <div class="container py-5">
+            <div class="row g-5 align-items-center">
+                <div class="col-md-12 col-lg-7">
+                    <h4 class="mb-3 text-secondary">Clean, Nutrient-Rich Formulas</h4>
+                    <h1 class="mb-5 display-3 text-primary">Empower Your<br>Health Naturally</h1>
+
+                    <div class="position-relative mx-auto">
+                        <input class="form-control border-2 border-secondary w-75 py-3 px-4 rounded-pill" type="number" placeholder="Search">
+                        <button type="submit" class="btn btn-primary border-2 border-secondary py-3 px-4 position-absolute rounded-pill text-white h-100" style="top: 0; right: 25%;">Submit Now</button>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-5">
+                    <div id="carouselId" class="carousel slide position-relative" data-bs-ride="carousel" style="">
+                        <div class="carousel-inner" role="listbox">
+                            <div class="carousel-item active rounded">
+                                <img src="img/s2.png" class="img-fluid w-100 h-100 bg-secondary rounded" alt="First slide">
+                                <a href="#" class="btn px-4 py-2 text-white rounded">Alive!®</a>
+                            </div>
+                            <div class="carousel-item rounded">
+                                <img src="img/s2.png" class="img-fluid w-100 h-100 rounded" alt="Second slide">
+                                <a href="#" class="btn px-4 py-2 text-white rounded">Alive!®</a>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselId" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselId" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero End -->
+
+
+        <!-- Featurs Section Start -->
+        <div class="container-fluid featurs py-5">
+            <div class="container py-5">
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-car-side fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Free Shipping</h5>
+                                <p class="mb-0">Free on order over 1000 LE</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-user-shield fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>Security Payment</h5>
+                                <p class="mb-0">100% security payment</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-exchange-alt fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>30 Day Return</h5>
+                                <p class="mb-0">30 day money guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fa fa-phone-alt fa-3x text-white"></i>
+                            </div>
+                            <div class="featurs-content text-center">
+                                <h5>24/7 Support</h5>
+                                <p class="mb-0">Support every time fast</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Featurs Section End -->
+
+
+        <!-- Fruits Shop Start-->
+        <div class="container-fluid fruite py-5">
+            <div class="container py-5">
+                <div class="tab-class text-center">
+                    <div class="row g-4">
+                        <div class="col-lg-4 text-start">
+                            <h1 class="text-primary">New Arrivals</h1>
+                        </div>
+                        <div class="col-lg-8 text-end">
+                            <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                        <!-- <span class="text-dark" style="width: 130px;">All Products</span> -->
+                                    </a>
+                                </li>
+                    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <% result.forEach(function(item) { %>
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                                <div class="card border-secondary rounded fruite-item">
+                                                    <div class="fruite-img">
+                                                        <img src="/img/<%= item.image %>" class="img-fluid rounded-top" alt="img">
+                                                    </div>
+                                                    <div class="card-body bg-light">
+                                                        <button type="button" class="btn btn-outline-secondary rounded-pill text-primary px-2 py-1 position-absolute" style="top: 10px; left: 10px;" data-bs-toggle="modal" data-bs-target="#productModal<%= item.id %>">
+                                                            <i class="fa fa-info-circle me-2 text-primary d-inline"></i>Details
+                                                        </button>
+                                                        <h5 class="card-title text-dark"><%= item.name %></h5>
+                                                        <br>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="text-dark fs-5 fw-bold mb-0">
+                                                                <% if (item.sale_price) { %>
+                                                                    <span class="">LE <strong><%= item.sale_price %></strong></span>
+                                                                    <span class="text-primary" style="text-decoration: line-through;"><strong><%= item.price %></strong></span>
+                                                                <% } else { %>
+                                                                    LE <strong><%= item.price %></strong>
+                                                                <% } %>
+                                                            </p>
+                                                            <!-- Form for adding to cart -->
+                                                            <form action="/add_to_cart" method="post">
+                                                                <input type="hidden" name="id" value="<%= item.id %>">
+                                                                <input type="hidden" name="name" value="<%= item.name %>">
+                                                                <input type="hidden" name="price" value="<%= item.price %>">
+                                                                <input type="hidden" name="sale_price" value="<%= item.sale_price %>">
+                                                                <input type="hidden" name="quantity" value="1">
+                                                                <input type="hidden" name="image" value="<%= item.image %>">
+                                                                <button type="submit" class="btn btn-primary">
+                                                                    <i class="fa fa-shopping-bag me-2"></i>Add to cart
+                                                                </button>
+                                                            </form>
+                                                            <!-- End of form -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="productModal<%= item.id %>" tabindex="-1" aria-labelledby="productModalLabel<%= item.id %>" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="productModalLabel<%= item.id %>"><%= item.name %></h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <img src="/img/<%= item.product_image_details %>" class="img-fluid img_product_details mb-3" alt="img">
+                                                            <p><%= item.description %></p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <% }); %>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Grapes</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Raspberries</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-3" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/fruite-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Oranges</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/fruite-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Apple</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-4" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/fruite-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Grapes</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/fruite-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Apricots</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-5" class="tab-pane fade show p-0">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/fruite-item-3.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Banana</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/fruite-item-2.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Raspberries</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6 col-lg-4 col-xl-3">
+                                            <div class="rounded position-relative fruite-item">
+                                                <div class="fruite-img">
+                                                    <img src="img/fruite-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
+                                                </div>
+                                                <div class="text-white bg-secondary px-3 py-1 rounded position-absolute" style="top: 10px; left: 10px;">Fruits</div>
+                                                <div class="p-4 border border-secondary border-top-0 rounded-bottom">
+                                                    <h4>Oranges</h4>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+                                                    <div class="d-flex justify-content-between flex-lg-wrap">
+                                                        <p class="text-dark fs-5 fw-bold mb-0">$4.99 / kg</p>
+                                                        <a href="#" class="btn border border-secondary rounded-pill px-3 text-primary"><i class="fa fa-shopping-bag me-2 text-primary"></i> Add to cart</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </div>
+        </div>
+        <!-- Fruits Shop End-->
+
+
+        <!-- Featurs Start -->
+        <div class="container-fluid fruite py-5">
+            <div class="container py-5">
+                <div class="tab-class text-center">
+                    <div class="row g-4">
+                        <div class="col-lg-4 text-start">
+                            <h1 class="text-primary">HOT OFFERS </h1>
+                        </div>
+                        <div class="container-fluid supplement-section py-5">
+                              <div class="row g-4 justify-content-center">
+                                <div class="col-md-6 col-lg-4">
+                                  <a href="#">
+                                    <div class="supplement-item bg-light rounded border border-light">
+                                      <div class="px-4 rounded-bottom">
+                                        <div class="supplement-content bg-primary text-center p-4 rounded">
+                                          <h5 class="text-white">Multivitamins</h5>
+                                          <h3 class="mb-0">20% OFF</h3>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                  <a href="#">
+                                    <div class="supplement-item bg-light rounded border border-light">
+                                      <div class="px-4 rounded-bottom">
+                                        <div class="supplement-content bg-success text-center p-4 rounded">
+                                          <h5 class="text-white">Whey Protein</h5>
+                                          <h3 class="mb-0">Free Delivery</h3>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                                <div class="col-md-6 col-lg-4">
+                                  <a href="#">
+                                    <div class="supplement-item bg-light rounded border border-light">
+                                      <div class="px-4 rounded-bottom">
+                                        <div class="supplement-content bg-warning text-center p-4 rounded">
+                                          <h5 class="text-white">Magnesium Supplements</h5>
+                                          <h3 class="mb-0">Buy 1 Get 1 Free</h3>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </a>
+                                </div>
+                              </div>
+                          </div>
+                    </div>
+                    
+                </div>      
+            </div>
+        </div>
+        <!-- Featurs End -->
+
+
+        <!-- Vesitable Shop Start-->
+        <div class="container-fluid fruite py-5">
+            <div class="container py-5">
+                <div class="tab-class text-center">
+                    <div class="row g-4">
+                        <div class="col-lg-4 text-start">
+                            <h1 class="text-primary">Featured products</h1>
+                        </div>
+                        <div class="col-lg-8 text-end">
+                            <ul class="nav nav-pills d-inline-flex text-center mb-5">
+                                <li class="nav-item">
+                                    <a class="d-flex m-2 py-2 bg-light rounded-pill active" data-bs-toggle="pill" href="#tab-1">
+                                        <!-- <span class="text-dark" style="width: 130px;">All Products</span> -->
+                                    </a>
+                                </li>
+                    
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row g-4">
+                                <div class="col-lg-12">
+                                    <div class="row g-4">
+                                        <% result.forEach(function(item) { %>
+                                            <div class="col-md-6 col-lg-4 col-xl-3">
+                                                <div class="card border-secondary rounded fruite-item">
+                                                    <div class="fruite-img">
+                                                        <img src="/img/<%= item.image %>" class="img-fluid rounded-top" alt="img">
+                                                    </div>
+                                                    <div class="card-body bg-light">
+                                                        <button type="button" class="btn btn-outline-secondary rounded-pill text-primary px-2 py-1 position-absolute" style="top: 10px; left: 10px;" data-bs-toggle="modal" data-bs-target="#productModal<%= item.id %>">
+                                                            <i class="fa fa-info-circle me-2 text-primary d-inline"></i>Details
+                                                        </button>
+                                                        <h5 class="card-title text-dark"><%= item.name %></h5>
+                                                        <br>
+                                                        <div class="d-flex justify-content-between align-items-center">
+                                                            <p class="text-dark fs-5 fw-bold mb-0">
+                                                                <% if (item.sale_price) { %>
+                                                                    <span class="">LE <strong><%= item.sale_price %></strong></span>
+                                                                    <span class="text-primary" style="text-decoration: line-through;"><strong><%= item.price %></strong></span>
+                                                                <% } else { %>
+                                                                    LE <strong><%= item.price %></strong>
+                                                                <% } %>
+                                                            </p>
+                                                            <!-- Form for adding to cart -->
+                                                            <form action="/add_to_cart" method="post">
+                                                                <input type="hidden" name="id" value="<%= item.id %>">
+                                                                <input type="hidden" name="name" value="<%= item.name %>">
+                                                                <input type="hidden" name="price" value="<%= item.price %>">
+                                                                <input type="hidden" name="sale_price" value="<%= item.sale_price %>">
+                                                                <input type="hidden" name="quantity" value="1">
+                                                                <input type="hidden" name="image" value="<%= item.image %>">
+                                                                <button type="submit" class="btn btn-primary">
+                                                                    <i class="fa fa-shopping-bag me-2"></i>Add to cart
+                                                                </button>
+                                                            </form>
+                                                            <!-- End of form -->
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="productModal<%= item.id %>" tabindex="-1" aria-labelledby="productModalLabel<%= item.id %>" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+                                                        <div class="modal-header">
+                                                            <h5 class="modal-title" id="productModalLabel<%= item.id %>"><%= item.name %></h5>
+                                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <img src="/img/<%= item.product_image_details %>" class="img-fluid img_product_details mb-3" alt="img">
+                                                            <p><%= item.description %></p>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        <% }); %>
+                                        
+                                        
+
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                   
+                       
+                    
+                    </div>
+                </div>      
+            </div>
+        </div>
+        <!-- Vesitable Shop End -->
+
+
+        <!-- Banner Section Start-->
+        <div class="container-fluid banner bg-banner my-5">
+            <div class="container py-5">
+                <div class="row g-4 align-items-center">
+                    <div class="col-lg-6">
+                        <div class="py-4">
+                            <h1 class="display-3 text-white">Test Plan for Essential Minerals</h1>
+                            <p class="fw-normal display-5 text-light mb-4">Ensure You Have the Right Nutrients</p>
+                            <p class="mb-4 text-light">Use the code <strong>TEST20</strong> at checkout to get a 20% discount on all mineral testing kits. This offer is valid for a limited time, so don't miss out!</p>
+                            <a href="#" class="banner-btn btn border-2 border-white rounded-pill text-light py-3 px-5">TEST NOW</a>
+                        </div>                        
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative">
+<svg class="animated" id="freepik_stories-online-test" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs"><style>svg#freepik_stories-online-test:not(.animated) .animable {opacity: 0;}svg#freepik_stories-online-test.animated #freepik--background-complete--inject-242 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideUp;animation-delay: 0s;}svg#freepik_stories-online-test.animated #freepik--Table--inject-242 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight;animation-delay: 0s;}svg#freepik_stories-online-test.animated #freepik--Screen--inject-242 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideRight,1.5s Infinite  linear heartbeat;animation-delay: 0s,1s;}svg#freepik_stories-online-test.animated #freepik--Character--inject-242 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) slideLeft;animation-delay: 0s;}svg#freepik_stories-online-test.animated #freepik--speech-bubble--inject-242 {animation: 1s 1 forwards cubic-bezier(.36,-0.01,.5,1.38) lightSpeedRight,1.5s Infinite  linear floating;animation-delay: 0s,1s;}            @keyframes slideUp {                0% {                    opacity: 0;                    transform: translateY(30px);                }                100% {                    opacity: 1;                    transform: inherit;                }            }                    @keyframes slideRight {                0% {                    opacity: 0;                    transform: translateX(30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }                    @keyframes heartbeat {                0% {                    transform: scale(1);                }                10% {                    transform: scale(1.1);                }                30% {                    transform: scale(1);                }                40% {                    transform: scale(1);                }                50% {                    transform: scale(1.1);                }                60% {                    transform: scale(1);                }                100% {                    transform: scale(1);                }            }                    @keyframes slideLeft {                0% {                    opacity: 0;                    transform: translateX(-30px);                }                100% {                    opacity: 1;                    transform: translateX(0);                }            }                    @keyframes lightSpeedRight {              from {                transform: translate3d(50%, 0, 0) skewX(-20deg);                opacity: 0;              }              60% {                transform: skewX(10deg);                opacity: 1;              }              80% {                transform: skewX(-2deg);              }              to {                opacity: 1;                transform: translate3d(0, 0, 0);              }            }                    @keyframes floating {                0% {                    opacity: 1;                    transform: translateY(0px);                }                50% {                    transform: translateY(-10px);                }                100% {                    opacity: 1;                    transform: translateY(0px);                }            }        .animator-hidden { display: none; }</style><g id="freepik--background-complete--inject-242" class="animable animator-hidden" style="transform-origin: 249.023px 209.188px;"><rect x="40.74" y="36.55" width="114.55" height="189.61" style="fill: rgb(224, 224, 224); transform-origin: 98.015px 131.355px;" id="el692k7r3g6c" class="animable"></rect><rect x="36.93" y="36.55" width="114.55" height="189.61" style="fill: rgb(235, 235, 235); transform-origin: 94.205px 131.355px;" id="el8q9klkgm1dv" class="animable"></rect><rect x="41.81" y="40.39" width="104.79" height="181.92" style="fill: rgb(255, 255, 255); transform-origin: 94.205px 131.35px;" id="elp3nyu85eleh" class="animable"></rect><rect x="61.76" y="64.03" width="64.44" height="134.64" style="fill: rgb(235, 235, 235); transform-origin: 93.98px 131.35px;" id="el7u5ozgcx7ho" class="animable"></rect><path d="M61.76,151c-.15-12.58,11.16-24.86,23.61-26.62,5.94-.83,12.25.35,17.8-1.93,9.9-4.06,13.06-17.22,23-21.13l.46,97.32H61.76Z" style="fill: rgb(224, 224, 224); transform-origin: 94.1943px 149.98px;" id="el0r71nid3ssx" class="animable"></path><polygon points="454.85 27.94 454.85 132.28 304.99 132.28 299.59 28.67 454.85 27.94" style="fill: rgb(224, 224, 224); transform-origin: 377.22px 80.11px;" id="el2cupuxfaazh" class="animable"></polygon><g id="elsxdv6vqtma7"><rect x="322.83" y="5.44" width="103.39" height="149.86" style="fill: rgb(255, 255, 255); transform-origin: 374.525px 80.37px; transform: rotate(-90deg);" class="animable" id="elz75bboc0tec"></rect></g><path d="M450.16,132.77H298.88V28H450.16Zm-149.85-1.42H448.74v-102H300.31Z" style="fill: rgb(224, 224, 224); transform-origin: 374.52px 80.385px;" id="els4u4ibq7bp8" class="animable"></path><rect x="315.82" y="41.52" width="117.4" height="77.7" style="fill: rgb(255, 255, 255); transform-origin: 374.52px 80.37px;" id="els113a3m1c7b" class="animable"></rect><path d="M433.22,41.52l-.58,0-1.67,0-6.44,0-24.2.09-84.51.17.34-.34c0,23.74,0,50,0,77.69h0l-.37-.37,117.4.07-.29.3c.06-23.65.11-43,.15-56.54,0-6.74.06-12,.08-15.63q0-2.67,0-4.11c0-.93,0-1.42,0-1.42s0,.45,0,1.36,0,2.29,0,4c0,3.6,0,8.85.07,15.57,0,13.54.09,33,.16,56.72v.29h-.3l-117.4.08h-.37v-.37h0c0-27.65,0-53.95,0-77.69v-.34h.33l84.74.17,24.11.09,6.38,0,1.63,0A5.24,5.24,0,0,1,433.22,41.52Z" style="fill: rgb(224, 224, 224); transform-origin: 374.325px 80.25px;" id="elq9g0bpeh588" class="animable"></path><path d="M299.59,28.38a12.17,12.17,0,0,1,2.58,1.67c1.53,1.11,3.62,2.68,5.88,4.48s4.23,3.51,5.63,4.79a11.87,11.87,0,0,1,2.14,2.2c-.13.16-3.74-2.82-8.24-6.41S299.46,28.55,299.59,28.38Z" style="fill: rgb(224, 224, 224); transform-origin: 307.703px 34.9531px;" id="els6mvv3puyjc" class="animable"></path><path d="M449.45,28.67c.13.16-3.4,3.17-7.88,6.72s-8.22,6.29-8.35,6.13,3.4-3.17,7.89-6.72S449.32,28.51,449.45,28.67Z" style="fill: rgb(224, 224, 224); transform-origin: 441.335px 35.095px;" id="elvd591g4elmc" class="animable"></path><path d="M449.33,132.08l-16.71-13.55" style="fill: rgb(255, 255, 255); transform-origin: 440.975px 125.305px;" id="el28fweibby4q" class="animable"></path><path d="M432.62,118.53c.13-.15,4,2.75,8.59,6.49s8.25,6.9,8.12,7.06-4-2.75-8.58-6.49S432.5,118.69,432.62,118.53Z" style="fill: rgb(224, 224, 224); transform-origin: 440.975px 125.305px;" id="eleaec935a8us" class="animable"></path><path d="M299.59,132.06c-.12-.16,3.37-3.13,7.81-6.64s8.13-6.22,8.26-6.06-3.37,3.13-7.8,6.64S299.72,132.22,299.59,132.06Z" style="fill: rgb(224, 224, 224); transform-origin: 307.625px 125.71px;" id="elpcshtrnijt" class="animable"></path><g id="elblcg5d5e7jp"><rect x="363.59" y="41.8" width="26.02" height="73.87" style="fill: rgb(224, 224, 224); transform-origin: 376.6px 78.735px; transform: rotate(-90deg);" class="animable" id="el1tzwrhw9wzv"></rect></g><path d="M227.56,374.58c0-4.53,3.47-7.81,8.14-7.81a7.7,7.7,0,0,1,6,2.54L239.89,371a5.33,5.33,0,0,0-4.06-1.78,5.35,5.35,0,1,0,0,10.69,5.26,5.26,0,0,0,4.06-1.81l1.83,1.74a7.72,7.72,0,0,1-6,2.54C231,382.4,227.56,379.12,227.56,374.58Z" style="fill: rgb(235, 235, 235); transform-origin: 234.64px 374.575px;" id="elopwu2fjkyra" class="animable"></path><path d="M212.13,386.49H193.29V367.65h18.84Zm-17.84-1h16.84V368.65H194.29Z" style="fill: rgb(235, 235, 235); transform-origin: 202.71px 377.07px;" id="elz4en0tarls" class="animable"></path><path d="M189.7,390.41c-.56-.42,3.94-7.18,10.87-14.35s13.51-11.93,14-11.39-5.27,6.12-12.08,13.2S190.28,390.87,189.7,390.41Z" style="fill: rgb(224, 224, 224); transform-origin: 202.126px 377.532px;" id="elw6ynfexjql8" class="animable"></path><path d="M214.83,390c-.61.44-5.75-5.81-12.54-13.06s-12.67-12.81-12.2-13.39,7.19,4.2,14.1,11.61S215.4,389.64,214.83,390Z" style="fill: rgb(224, 224, 224); transform-origin: 202.472px 376.762px;" id="elqzw463oh3" class="animable"></path><path d="M86,313.13l-9.25-.66-2.13,4.16-3.55-.25,9.65-17.93,3.38.24,7,19.11-3.6-.25Zm-.94-2.78L82.15,302l-4,7.85Z" style="fill: rgb(235, 235, 235); transform-origin: 81.085px 308.125px;" id="eloy080viukk" class="animable"></path><path d="M55.79,317.39l-22.74-1.61L34.67,293l22.73,1.62Zm-21.67-2.54,20.74,1.48,1.47-20.75-20.74-1.47Z" style="fill: rgb(235, 235, 235); transform-origin: 45.225px 305.195px;" id="el6obj3xvmpyg" class="animable"></path><path d="M28.22,320.34c-.52-.45,5.63-8.2,14.68-16.32s17.39-13.45,17.79-12.89-7.13,6.78-16,14.82S28.77,320.84,28.22,320.34Z" style="fill: rgb(224, 224, 224); transform-origin: 44.4473px 305.728px;" id="elz9rbirp1pfo" class="animable"></path><path d="M58.87,322.06c-.64.4-6.26-7.75-13.93-17.18S30.5,288.24,31,287.69s8.18,5.94,16,15.55S59.46,321.71,58.87,322.06Z" style="fill: rgb(224, 224, 224); transform-origin: 44.9471px 304.866px;" id="elp0q7p4y13r" class="animable"></path><path d="M469.65,214.21c.87,3.06-1,5.53-5.62,6.83l-8.88,2.51-5-17.86,8.37-2.37c4.28-1.21,7.09,0,7.89,2.78a4.43,4.43,0,0,1-1.18,4.58A4.56,4.56,0,0,1,469.65,214.21Zm-15.5-6.86,1.4,4.93,4.69-1.33c2.3-.65,3.37-1.84,2.91-3.47s-2-2.11-4.3-1.46Zm12.07,7.47c-.51-1.78-2.09-2.19-4.59-1.48l-5.35,1.52,1.45,5.15,5.36-1.52C465.59,217.78,466.72,216.61,466.22,214.82Z" style="fill: rgb(235, 235, 235); transform-origin: 460.004px 213.201px;" id="el0ydcwh29v97j" class="animable"></path><path d="M416.66,236.63l-6.21-21.93,21.93-6.21,6.21,21.93Zm-5-21.24,5.66,20,20-5.67-5.67-20Z" style="fill: rgb(235, 235, 235); transform-origin: 424.52px 222.56px;" id="elztjpmizsbgj" class="animable"></path><path d="M413.67,242.57c-.65-.26,2.5-9.63,8.25-20.35s11.79-18.56,12.35-18.16-4.4,8.79-10,19.39S414.35,242.85,413.67,242.57Z" style="fill: rgb(224, 224, 224); transform-origin: 423.95px 223.311px;" id="elh12w234wdqq" class="animable"></path><path d="M443.08,233.76c-.47.59-8.52-5.16-18.94-11.42S404.9,211.59,405.2,210.9s9.72,2.81,20.28,9.21S443.52,233.23,443.08,233.76Z" style="fill: rgb(224, 224, 224); transform-origin: 424.145px 222.308px;" id="elqvipamffpni" class="animable"></path></g><g id="freepik--Table--inject-242" class="animable" style="transform-origin: 248.055px 431px;"><path d="M467.25,431c0,.14-98.15.26-219.18.26S28.86,431.09,28.86,431s98.13-.26,219.21-.26S467.25,430.8,467.25,431Z" id="eldjfif68ztv8" class="animable" style="transform-origin: 248.055px 431px;"></path></g><g id="freepik--Screen--inject-242" class="animable animator-active" style="transform-origin: 210.045px 207.34px;"><rect x="81.59" y="77.23" width="256.81" height="260.52" style="fill: rgb(255, 255, 255); transform-origin: 209.995px 207.49px;" id="elcl4z2j2ueou" class="animable"></rect><path d="M338.4,337.75s0-.12,0-.32,0-.52,0-.92c0-.81,0-2,0-3.6,0-3.18,0-7.87-.05-14,0-12.24-.07-30.18-.12-53-.05-45.57-.13-110.65-.23-188.68l.45.45-256.78.07h0l.52-.52c0,95.47,0,184.9-.07,260.51l-.45-.44,186.06.22,52.21.12,13.78.05,3.55,0h.9l.31,0h-1.16l-3.5,0-13.7.05-52.1.12-186.35.22h-.45v-.45c0-75.61,0-165-.07-260.51v-.52h.55l256.78.07h.46v.45c-.1,78.15-.18,143.32-.23,189-.06,22.78-.1,40.68-.12,52.9,0,6.08,0,10.75-.06,13.91,0,1.56,0,2.75,0,3.55v.89A1.71,1.71,0,0,1,338.4,337.75Z" style="fill: rgb(38, 50, 56); transform-origin: 210.045px 207.34px;" id="ell0jqlpllt4h" class="animable"></path><path d="M101.75,119.72v6.91h-1.29V120.8H99v-1.08Z" id="elymmdf5n2ka" class="animable" style="transform-origin: 100.375px 123.175px;"></path><path d="M103.08,125.88a.81.81,0,1,1,1.62,0,.81.81,0,1,1-1.62,0Z" id="elngvro268ghe" class="animable" style="transform-origin: 103.89px 125.88px;"></path><path d="M187.86,91.79a3.72,3.72,0,1,1,3.72,3.55A3.54,3.54,0,0,1,187.86,91.79Zm6.15,0a2.43,2.43,0,1,0-2.43,2.43A2.36,2.36,0,0,0,194,91.79Z" id="el8e2e818mgqr" class="animable" style="transform-origin: 191.576px 91.6223px;"></path><path d="M202.8,88.34v6.91h-1.05l-3.81-4.68v4.68h-1.28V88.34h1.06L201.53,93V88.34Z" id="elw76a3cwb3rg" class="animable" style="transform-origin: 199.73px 91.795px;"></path><path d="M204.66,88.34h1.28v5.82h3.62v1.09h-4.9Z" id="el33qxi3bjiir" class="animable" style="transform-origin: 207.11px 91.795px;"></path><path d="M210.57,88.34h1.28v6.91h-1.28Z" id="el52zgubvzzrl" class="animable" style="transform-origin: 211.21px 91.795px;"></path><path d="M219.86,88.34v6.91H218.8L215,90.57v4.68h-1.27V88.34h1.06L218.59,93V88.34Z" id="el27okq0c1ewb" class="animable" style="transform-origin: 216.795px 91.795px;"></path><path d="M226.9,94.17v1.08h-5.19V88.34h5v1.07H223v1.8h3.34v1.05H223v1.91Z" id="eld13n6wg5fe" class="animable" style="transform-origin: 224.305px 91.795px;"></path><path d="M232.45,89.42h-2.29V88.34H236v1.08h-2.29v5.83h-1.29Z" id="eldomabbqyxhd" class="animable" style="transform-origin: 233.08px 91.795px;"></path><path d="M242.18,94.17v1.08H237V88.34h5v1.07h-3.76v1.8h3.33v1.05h-3.33v1.91Z" id="eljmgr03q6hok" class="animable" style="transform-origin: 239.59px 91.795px;"></path><path d="M243,94.52l.45-1a3.85,3.85,0,0,0,2.28.76c1.08,0,1.53-.39,1.53-.9,0-1.49-4.11-.51-4.11-3.08,0-1.12.89-2.06,2.79-2.06a4.34,4.34,0,0,1,2.3.61l-.41,1a3.79,3.79,0,0,0-1.9-.55c-1.07,0-1.5.42-1.5.94,0,1.47,4.09.51,4.09,3.05,0,1.11-.9,2-2.79,2A4.5,4.5,0,0,1,243,94.52Z" id="ely1xjecikyz" class="animable" style="transform-origin: 245.76px 91.767px;"></path><path d="M251.12,89.42h-2.29V88.34h5.86v1.08H252.4v5.83h-1.28Z" id="elr8gz4kfpwp" class="animable" style="transform-origin: 251.76px 91.795px;"></path><path d="M133.75,150.08h-3.46l-.68,1.6h-1.32l3.11-6.91h1.26l3.12,6.91h-1.34Zm-.43-1-1.3-3-1.29,3Z" id="elhwpuv2hzu0k" class="animable" style="transform-origin: 132.035px 148.225px;"></path><circle cx="98.92" cy="92.43" r="2.81" id="elwtccvdg76qg" class="animable" style="transform-origin: 98.92px 92.43px;"></circle><circle cx="107.43" cy="92.43" r="2.81" id="elaq5e7sw97rm" class="animable" style="transform-origin: 107.43px 92.43px;"></circle><circle cx="115.94" cy="92.43" r="2.81" id="eldrjq3z1l8q" class="animable" style="transform-origin: 115.94px 92.43px;"></circle><path d="M338.4,106.33c0,.14-57.2.26-127.75.26s-127.76-.12-127.76-.26,57.19-.26,127.76-.26S338.4,106.19,338.4,106.33Z" id="elyf1zqcynho7" class="animable" style="transform-origin: 210.645px 106.33px;"></path><path d="M310.32,125.65c0,.14-44.53.26-99.45.26s-99.47-.12-99.47-.26,44.53-.26,99.47-.26S310.32,125.5,310.32,125.65Z" id="elb43m0axiyv8" class="animable" style="transform-origin: 210.86px 125.65px;"></path><path d="M188.16,132.41c0,.14-17,.26-38,.26s-38.06-.12-38.06-.26,17-.26,38.06-.26S188.16,132.26,188.16,132.41Z" id="elvi2edae1bed" class="animable" style="transform-origin: 150.13px 132.41px;"></path><path d="M123,152.77h-9.11v-9.11H123Zm-8.11-1H122v-7.11h-7.11Z" id="elvx3hxfsbuap" class="animable" style="transform-origin: 118.445px 148.215px;"></path><path d="M135.36,167.1c0,1.18-.93,1.87-2.71,1.87h-3.43v-6.91h3.23c1.66,0,2.55.7,2.55,1.8a1.65,1.65,0,0,1-.89,1.52A1.71,1.71,0,0,1,135.36,167.1Zm-4.86-4V165h1.82c.88,0,1.39-.31,1.39-.94s-.51-1-1.39-1Zm3.56,3.9c0-.69-.52-1-1.49-1H130.5v2h2.07C133.54,168,134.06,167.66,134.06,167Z" id="elyeb19dcoghs" class="animable" style="transform-origin: 132.291px 165.515px;"></path><path d="M123,170.07h-9.11V161H123Zm-8.11-1H122V162h-7.11Z" id="eluwor7hcfhzl" class="animable" style="transform-origin: 118.445px 165.535px;"></path><path d="M128.72,182.81a3.74,3.74,0,0,1,6.44-2.4l-.83.78a2.44,2.44,0,0,0-1.85-.81,2.43,2.43,0,1,0,0,4.86,2.42,2.42,0,0,0,1.85-.82l.83.79a3.74,3.74,0,0,1-6.44-2.4Z" id="el6xnjy7g7oox" class="animable" style="transform-origin: 131.94px 182.81px;"></path><path d="M123,187.36h-9.11v-9.11H123Zm-8.11-1H122v-7.11h-7.11Z" id="eln54k2d8lr1" class="animable" style="transform-origin: 118.445px 182.805px;"></path><path d="M129.22,196.65h3c2.24,0,3.77,1.38,3.77,3.45s-1.53,3.46-3.77,3.46h-3Zm3,5.82a2.37,2.37,0,1,0,0-4.73H130.5v4.73Z" id="el6cdudp9uxoy" class="animable" style="transform-origin: 132.605px 200.105px;"></path><path d="M123,204.66h-9.11v-9.11H123Zm-8.11-1H122v-7.11h-7.11Z" id="elhvr0zbylqzu" class="animable" style="transform-origin: 118.445px 200.105px;"></path><path d="M210.86,148.22c0,.14-15,.26-33.56.26s-33.57-.12-33.57-.26,15-.26,33.57-.26S210.86,148.07,210.86,148.22Z" id="elore75ijjude" class="animable" style="transform-origin: 177.295px 148.22px;"></path><path d="M303.26,165.51c0,.15-35.72.26-79.76.26s-79.77-.11-79.77-.26,35.71-.26,79.77-.26S303.26,165.37,303.26,165.51Z" id="eldfoiiu3tk5w" class="animable" style="transform-origin: 223.495px 165.51px;"></path><path d="M165.68,200.1c0,.14-4.91.26-11,.26s-11-.12-11-.26,4.91-.26,11-.26S165.68,200,165.68,200.1Z" id="elhak44misyuj" class="animable" style="transform-origin: 154.68px 200.1px;"></path><path d="M223.49,182.81c0,.14-17.85.26-39.88.26s-39.88-.12-39.88-.26,17.85-.26,39.88-.26S223.49,182.66,223.49,182.81Z" id="elew1lesn7dwt" class="animable" style="transform-origin: 183.61px 182.81px;"></path><path d="M102,224.72v1.08h-5.1v-.86l2.75-2.6c.67-.64.79-1.05.79-1.43,0-.64-.44-1-1.29-1a1.94,1.94,0,0,0-1.61.72l-.9-.69a3.19,3.19,0,0,1,2.62-1.15c1.5,0,2.47.76,2.47,2a2.79,2.79,0,0,1-1.14,2.18l-1.85,1.76Z" id="elpm6i3u9l2mo" class="animable" style="transform-origin: 99.32px 222.293px;"></path><path d="M102.75,225.05a.81.81,0,1,1,1.62,0,.81.81,0,1,1-1.62,0Z" id="elu1vx16777v9" class="animable" style="transform-origin: 103.56px 225.05px;"></path><path d="M131.33,249.25h-3.45l-.68,1.6h-1.33l3.11-6.91h1.27l3.12,6.91H132Zm-.42-1-1.3-3-1.3,3Z" id="elzmys9t0cjqo" class="animable" style="transform-origin: 129.62px 247.395px;"></path><path d="M307.9,224.82c0,.14-44.53.26-99.45.26S109,225,109,224.82s44.52-.26,99.46-.26S307.9,224.68,307.9,224.82Z" id="eli6daucglrz" class="animable" style="transform-origin: 208.45px 224.82px;"></path><path d="M185.75,231.58c0,.14-17,.26-38.06.26s-38.06-.12-38.06-.26,17-.26,38.06-.26S185.75,231.43,185.75,231.58Z" id="elr9ypb9ksa5" class="animable" style="transform-origin: 147.69px 231.58px;"></path><path d="M120.54,252h-9.11v-9.11h9.11Zm-8.11-1h7.11v-7.11h-7.11Z" id="el2jtsw3w9qer" class="animable" style="transform-origin: 115.985px 247.445px;"></path><path d="M132.94,266.27c0,1.18-.93,1.87-2.7,1.87H126.8v-6.91H130c1.66,0,2.55.7,2.55,1.8a1.67,1.67,0,0,1-.89,1.52A1.7,1.7,0,0,1,132.94,266.27Zm-4.85-4v1.91h1.81c.89,0,1.39-.32,1.39-.95s-.5-1-1.39-1Zm3.56,3.9c0-.69-.52-1-1.49-1h-2.07v2h2.07C131.13,267.14,131.65,266.83,131.65,266.14Z" id="elicimczdpo99" class="animable" style="transform-origin: 129.871px 264.685px;"></path><path d="M120.54,269.24h-9.11v-9.11h9.11Zm-8.11-1h7.11v-7.11h-7.11Z" id="elakd4ymcxxow" class="animable" style="transform-origin: 115.985px 264.685px;"></path><path d="M126.31,282a3.52,3.52,0,0,1,3.7-3.55,3.48,3.48,0,0,1,2.73,1.15l-.82.78a2.46,2.46,0,0,0-1.85-.81,2.43,2.43,0,1,0,0,4.86,2.43,2.43,0,0,0,1.85-.82l.82.79a3.73,3.73,0,0,1-6.43-2.4Z" id="eltj3fz5db8ys" class="animable" style="transform-origin: 129.525px 282.003px;"></path><path d="M120.54,286.53h-9.11v-9.11h9.11Zm-8.11-1h7.11v-7.11h-7.11Z" id="el2v0ea9zg0v" class="animable" style="transform-origin: 115.985px 281.975px;"></path><path d="M126.8,295.82h3c2.24,0,3.77,1.38,3.77,3.46s-1.53,3.45-3.77,3.45h-3Zm3,5.83a2.38,2.38,0,1,0,0-4.74h-1.67v4.74Z" id="elkcsstkf9kc" class="animable" style="transform-origin: 130.185px 299.275px;"></path><path d="M120.54,303.83h-9.11v-9.11h9.11Zm-8.11-1h7.11v-7.11h-7.11Z" id="el9592fisf7as" class="animable" style="transform-origin: 115.985px 299.275px;"></path><path d="M208.45,247.39c0,.14-15,.26-33.57.26s-33.57-.12-33.57-.26,15-.26,33.57-.26S208.45,247.25,208.45,247.39Z" id="el5thrf00pjdt" class="animable" style="transform-origin: 174.88px 247.39px;"></path><path d="M300.84,264.68c0,.15-35.71.26-79.76.26s-79.77-.11-79.77-.26,35.71-.26,79.77-.26S300.84,264.54,300.84,264.68Z" id="els5mokrxniyh" class="animable" style="transform-origin: 221.075px 264.68px;"></path><path d="M163.27,299.27c0,.15-4.92.26-11,.26s-11-.11-11-.26,4.92-.26,11-.26S163.27,299.13,163.27,299.27Z" id="elrarnrngfpmh" class="animable" style="transform-origin: 152.27px 299.27px;"></path><path d="M221.08,282c0,.14-17.86.26-39.88.26s-39.89-.12-39.89-.26,17.86-.26,39.89-.26S221.08,281.83,221.08,282Z" id="ele44kfgt3j5d" class="animable" style="transform-origin: 181.195px 282px;"></path><path d="M285.66,323H244.49a12.63,12.63,0,0,1-12.63-12.64h0a12.63,12.63,0,0,1,12.63-12.63h41.17a12.63,12.63,0,0,1,12.63,12.63h0A12.63,12.63,0,0,1,285.66,323Z" style="fill: #81C408; transform-origin: 265.075px 310.365px;" id="el8i3cy1jpk0q" class="animable"></path><path d="M254.77,307.36v6.87h-1.31L250,310.06v4.17h-1.57v-6.87h1.31l3.41,4.17v-4.17Z" style="fill: rgb(255, 255, 255); transform-origin: 251.6px 310.795px;" id="el4903awkmt2a" class="animable"></path><path d="M261.71,313v1.28h-5.32v-6.87h5.19v1.28H258v1.49h3.19v1.23H258V313Z" style="fill: rgb(255, 255, 255); transform-origin: 259.05px 310.845px;" id="eluzjim93jxye" class="animable"></path><path d="M267.23,314.23l-1.66-2.38-1.63,2.38h-1.82l2.54-3.49-2.41-3.38h1.8l1.58,2.23,1.55-2.23h1.72l-2.4,3.32,2.57,3.55Z" style="fill: rgb(255, 255, 255); transform-origin: 265.595px 310.795px;" id="eluabdk8z0x4i" class="animable"></path><path d="M271,308.66h-2.2v-1.3h6v1.3h-2.2v5.57H271Z" style="fill: rgb(255, 255, 255); transform-origin: 271.8px 310.795px;" id="elg9jal732h4q" class="animable"></path><path d="M283.49,313.71a.51.51,0,0,1-.42-.23.5.5,0,0,1,.14-.69l3.19-2.13a.34.34,0,0,0,.16-.3.35.35,0,0,0-.17-.3l-3.16-1.87a.5.5,0,0,1,.51-.86l3.16,1.86a1.37,1.37,0,0,1,.06,2.31l-3.19,2.12A.51.51,0,0,1,283.49,313.71Z" style="fill: rgb(255, 255, 255); transform-origin: 285.276px 310.487px;" id="el7ihxwpynwfl" class="animable"></path><path d="M112.76,169.91c-.3-.3,1.63-2.73,4.32-5.43s5.12-4.62,5.43-4.32-1.63,2.74-4.32,5.43S113.07,170.22,112.76,169.91Z" style="fill: #81C408; transform-origin: 117.636px 165.036px;" id="elkvy0pbxa5d" class="animable"></path><path d="M124.17,170.86c-.3.31-2.89-1.79-5.78-4.68s-5-5.47-4.68-5.78,2.9,1.79,5.78,4.68S124.48,170.56,124.17,170.86Z" style="fill: #81C408; transform-origin: 118.939px 165.63px;" id="elj9a4tkh2y4" class="animable"></path><path d="M110.57,252.44c-.31-.31,1.63-2.74,4.32-5.43s5.12-4.62,5.43-4.32-1.63,2.73-4.33,5.43S110.87,252.74,110.57,252.44Z" style="fill: #81C408; transform-origin: 115.445px 247.565px;" id="elsad0xnubf7p" class="animable"></path><path d="M122,253.39c-.31.3-2.89-1.79-5.78-4.68s-5-5.48-4.68-5.78,2.89,1.79,5.78,4.68S122.28,253.08,122,253.39Z" style="fill: #81C408; transform-origin: 116.767px 248.16px;" id="elj4shdssn5pc" class="animable"></path></g><g id="freepik--Character--inject-242" class="animable animator-hidden" style="transform-origin: 264.737px 314.947px;"><path d="M304.52,455.54,234.31,433a1.62,1.62,0,0,0-.58-.07l-54,4c-9.49-23-21.38-51.75-26.79-64.88A13.29,13.29,0,0,0,142.36,364l-58.48-7.64a4,4,0,0,0-4.17,5.52l32.93,76.79a8,8,0,0,0,4.7,4.4l66.89,26.69a9.93,9.93,0,0,0,4.82.64l4.28-.47h0c14.82-1.55,88-9,110.89-11.4A1.52,1.52,0,0,0,304.52,455.54Z" style="fill: rgb(224, 224, 224); transform-origin: 192.53px 413.398px;" id="elwtqg3u49hdn" class="animable"></path><path d="M304.52,455.54a1.55,1.55,0,0,1,1,1,1.58,1.58,0,0,1-.49,1.67,1.82,1.82,0,0,1-1.1.38l-1.32.14-16.43,1.74-60.44,6.29-20,2.08-10.65,1.1-5.47.59a10.59,10.59,0,0,1-5.61-.65l-44.74-17.82-11.95-4.77-6.09-2.42-3.07-1.22c-.51-.22-1-.4-1.55-.63a7.82,7.82,0,0,1-1.48-.86,8.44,8.44,0,0,1-2.28-2.55c-.56-1-.92-2.05-1.38-3.08l-2.67-6.21q-2.69-6.24-5.41-12.61c-7.27-17-14.81-34.52-22.52-52.5l-1.06-2.47a5.49,5.49,0,0,1-.67-2.68,4.28,4.28,0,0,1,3.49-3.95c.23-.05.47,0,.71-.07l.69.05,1.32.18,2.63.34,5.24.68L113.9,360l20.2,2.64,5,.65c1.65.25,3.3.36,5,.75a13.65,13.65,0,0,1,8,5.72,26.33,26.33,0,0,1,2.09,4.44q.92,2.24,1.84,4.46l3.63,8.81,7.08,17.16c4.62,11.22,9.07,22,13.3,32.26l-.22-.14,52.62-3.89,1.46-.11a2.07,2.07,0,0,1,.77.14l.69.23L238,434l5.32,1.71L253.35,439l17.7,5.71,24.75,8,6.5,2.13c1.47.48,2.22.74,2.22.74s-.76-.22-2.24-.68l-6.52-2.06L271,444.9l-17.71-5.66L243.19,436l-5.32-1.7-2.73-.87a5.22,5.22,0,0,0-1.34-.35l-1.46.11-52.61,4h-.15l-.07-.15c-4.24-10.25-8.69-21-13.33-32.24l-7.09-17.16q-1.8-4.36-3.64-8.81c-.61-1.48-1.23-3-1.84-4.46a26.24,26.24,0,0,0-2.05-4.35,13.12,13.12,0,0,0-7.67-5.5c-1.56-.38-3.24-.5-4.88-.74l-5-.65-20.21-2.63-20.68-2.7-5.25-.68-2.63-.35a9.39,9.39,0,0,0-2.56-.16,3.77,3.77,0,0,0-3.06,3.47,4.94,4.94,0,0,0,.63,2.45L81.34,365l22.51,52.51q2.73,6.36,5.4,12.61c.9,2.08,1.78,4.15,2.67,6.21.45,1,.84,2.1,1.36,3a7.76,7.76,0,0,0,2.14,2.39,7.42,7.42,0,0,0,1.39.81c.48.21,1,.4,1.52.61l3.07,1.23,6.08,2.43,12,4.77,44.72,17.87a10.09,10.09,0,0,0,5.4.63l5.48-.59,10.65-1.08,20-2,60.46-6.13,16.44-1.65,1.32-.12a1.79,1.79,0,0,0,1.06-.35,1.52,1.52,0,0,0,.49-1.59,1.4,1.4,0,0,0-.64-.84C304.64,455.59,304.52,455.55,304.52,455.54Z" style="fill: rgb(38, 50, 56); transform-origin: 192.365px 413.348px;" id="elmdo7o8eidlc" class="animable"></path><polygon points="214.16 441.64 240.49 452.66 273.3 449.24 245.71 437.85 214.16 441.64" style="fill: rgb(245, 245, 245); transform-origin: 243.73px 445.255px;" id="elv86fdi6ve4q" class="animable"></polygon><polygon points="194.31 462.47 245.71 457.83 196.63 438.37 180.85 439.56 189.19 459.68 194.31 462.47" style="fill: rgb(245, 245, 245); transform-origin: 213.28px 450.42px;" id="eln1sobbcz4un" class="animable"></polygon><path d="M299.43,455.51l-.35.06-1.05.13-4,.41-14.86,1.45-49,4.57-38.52,3.48-.16,0-.06-.15-8.53-20.81-2.34-5.82q-.39-1-.6-1.53a5.2,5.2,0,0,1-.19-.54s.09.17.25.51l.66,1.51,2.45,5.77c2.1,5,5.1,12.15,8.7,20.75l-.22-.14,38.51-3.57,49.05-4.42L294,455.91l4-.32,1.05-.07Z" id="el0taf3usirjm" class="animable" style="transform-origin: 239.6px 451.185px;"></path><path d="M81.41,359.14l.44,0,1.3.15,5,.65,18.34,2.5c7.74,1.08,17,2.38,27.19,3.89l7.84,1.21,2,.34c.33.05.68.13,1,.21.17,0,.35.07.52.12a6.69,6.69,0,0,1,2.25,1.49,3.1,3.1,0,0,1,.61.95l.39,1c2.09,5.22,4.25,10.63,6.47,16.16,8.84,22.15,16.83,42.21,22.63,56.75,2.87,7.25,5.19,13.13,6.81,17.21.78,2,1.39,3.6,1.82,4.7.2.52.35.92.46,1.22a3.07,3.07,0,0,1,.14.42,4.09,4.09,0,0,1-.19-.4l-.51-1.21-1.91-4.65c-1.65-4.08-4-9.93-7-17.16L154.33,388c-2.22-5.53-4.38-10.94-6.47-16.16l-.39-1a2.65,2.65,0,0,0-.51-.8,4.91,4.91,0,0,0-1.59-1.15,4.47,4.47,0,0,0-.46-.19l-.48-.12c-.32-.07-.64-.14-1-.19l-2-.35-7.84-1.23-27.16-4-18.32-2.67-5-.74-1.29-.21Z" id="el6yhw9z08ec4" class="animable" style="transform-origin: 134.015px 413.625px;"></path><path d="M133.1,405.11c2.5,3.35,3,7.2,1.13,8.6s-5.43-.17-7.93-3.52-3-7.19-1.13-8.6S130.6,401.77,133.1,405.11Z" style="fill: rgb(255, 255, 255); transform-origin: 129.7px 407.649px;" id="elk389plj7ad" class="animable"></path><path d="M449.48,348c-3.35-19-24.36-30.45-31.3-36.77l10.43,13.95a227.66,227.66,0,0,1,6,67.32c-.14,2.47.13,5.8,1.89,6.15a2.45,2.45,0,0,0,1.76-.55c6.16-3.95,10.16-13,11.05-22.32S451,356.79,449.48,348Z" style="fill: #81C408; transform-origin: 434.257px 354.944px;" id="eljn8ou2t968" class="animable"></path><path d="M434.1,326.72c-1-1.91-.59-8-6-1.64l-.35-2.38L394.32,297l-74.51,3.87c-7.15.45-17.89,12.83-20.57,18-2.2,19.23-2.64,36.3-2.64,36.3s-2.56,21.38,0,31.49,5.59,13.76,9.55,21.62A67.45,67.45,0,0,0,316.89,423l3.48,27,77.84,7,35.63-2s-3.19-53.25-3.19-54.19c0-.44,4.45-10.72,9.23-21.63C448,360.51,443.42,344.74,434.1,326.72Z" style="fill: rgb(69, 90, 100); transform-origin: 369.773px 377px;" id="ellnxke1djc3" class="animable"></path><path d="M238.62,423.57c.39,0,4.28-26.29,6.83-32.26,2.4-5.63,53.79-72.45,53.79-72.45l12.1,39-5.19,20.86-28,33.69-7.91,24.42Z" style="fill: rgb(69, 90, 100); transform-origin: 274.98px 377.845px;" id="elucjmgjjyf5" class="animable"></path><path d="M444.46,346.7c-3.69-23.39-21.91-22.37-21.91-22.37l-18.11,31.51V421l-87.37,7.56-1.62,21.94s87.05,19.9,107.16,13.23c13.31-4.41,24.55-15.54,25.78-33.73S448.16,370.1,444.46,346.7Z" style="fill: rgb(69, 90, 100); transform-origin: 382.134px 394.71px;" id="elcobd10h1ace" class="animable"></path><path d="M278.24,412.37a42.25,42.25,0,0,0-1-4.42A21.3,21.3,0,0,0,262,393.64a42.9,42.9,0,0,0-4.48-.76,5.22,5.22,0,0,1,1.24,0,18.56,18.56,0,0,1,3.33.44,20.72,20.72,0,0,1,15.45,14.56,18.16,18.16,0,0,1,.64,3.3A4.82,4.82,0,0,1,278.24,412.37Z" id="elhdgu98fyc6u" class="animable" style="transform-origin: 267.887px 402.607px;"></path><path d="M320.06,427.66a2.41,2.41,0,0,1,.38-.07l1.11-.16,4.28-.57,15.77-2,52-6.32,11.56-1.38-.23.25c.67-17.72,1-33.34.88-44.53,0-5.59-.12-10.08-.19-13.17,0-1.52-.07-2.71-.09-3.54v-.92c0-.21,0-.31,0-.32a1.64,1.64,0,0,1,0,.32c0,.23,0,.53.06.91,0,.84.1,2,.17,3.55.13,3.08.27,7.57.35,13.17.18,11.19-.06,26.83-.71,44.54v.22l-.22,0-11.56,1.39-52.05,6.17-15.78,1.81-4.3.46-1.12.11Z" id="elveuakyiwx7" class="animable" style="transform-origin: 363.114px 391.295px;"></path><path d="M449.58,427.66a2,2,0,0,1,0,.4c0,.28,0,.67-.06,1.16a41.92,41.92,0,0,1-.51,4.45,46.32,46.32,0,0,1-1.71,6.89,39.78,39.78,0,0,1-4.08,8.46,33.38,33.38,0,0,1-7.67,8.42,30.53,30.53,0,0,1-11.76,5.61,50.46,50.46,0,0,1-7,1.17,71.73,71.73,0,0,1-7.38.28A106.12,106.12,0,0,1,394,463.06l-29.51-4.85-12.87-2.14L340.41,454c-6.83-1.28-12.37-2.25-16.21-2.83l-4.43-.65-1.15-.16a1.76,1.76,0,0,1-.39-.08l.39,0,1.16.12c1,.11,2.52.28,4.45.55,3.85.52,9.4,1.44,16.25,2.67l11.19,2,12.88,2.09,29.51,4.82A105.44,105.44,0,0,0,409.42,464c2.5,0,4.94-.07,7.33-.26a49.21,49.21,0,0,0,6.92-1.14,30.17,30.17,0,0,0,11.62-5.5,33.2,33.2,0,0,0,7.62-8.27,39.92,39.92,0,0,0,4.11-8.36,47.8,47.8,0,0,0,1.79-6.82c.33-1.91.53-3.41.6-4.43l.12-1.16A2.94,2.94,0,0,1,449.58,427.66Z" id="ela1naenvovyb" class="animable" style="transform-origin: 383.91px 446.083px;"></path><path d="M317.7,429.27a2,2,0,0,1-.08-.41c-.05-.31-.12-.72-.19-1.22-.16-1.12-.39-2.68-.67-4.66l0,.07-6.62-7.33h0a50.42,50.42,0,0,1-3.49-5.76,65.43,65.43,0,0,1-3.06-7,77.17,77.17,0,0,1-4-16.71,104,104,0,0,1-.43-18.59c.31-5.7.9-10.82,1.46-15.1s1.09-7.73,1.47-10.12l.45-2.74c.05-.29.09-.52.13-.71a.81.81,0,0,1,.06-.24,1.08,1.08,0,0,1,0,.24c0,.2,0,.43-.08.72-.09.68-.2,1.6-.35,2.76-.32,2.39-.79,5.85-1.31,10.14S300,362,299.69,367.7a106.74,106.74,0,0,0,.46,18.49,78.28,78.28,0,0,0,3.92,16.62,64.44,64.44,0,0,0,3,6.93,51.8,51.8,0,0,0,3.41,5.74l0,0,6.53,7.42,0,0v0l.54,4.67c.05.51.09.92.13,1.23A1.33,1.33,0,0,1,317.7,429.27Z" id="el6y9ir1aywaa" class="animable" style="transform-origin: 308.322px 384.01px;"></path><path d="M417.75,431.7a20.2,20.2,0,0,1-1.81-2.33c-1.09-1.47-2.62-3.47-4.41-5.6s-3.48-4-4.73-5.32a20.92,20.92,0,0,1-2-2.2,13.89,13.89,0,0,1,2.24,1.94,64.83,64.83,0,0,1,4.87,5.25,67.85,67.85,0,0,1,4.31,5.71A14.72,14.72,0,0,1,417.75,431.7Z" id="ele899e95p064" class="animable" style="transform-origin: 411.275px 423.975px;"></path><path d="M260,426.78c-.74-4.27-4.63-7.6-4.63-7.6s-1.86-5.2-4.64-6.57-5,1.37-7.42.63-7.61-.93-9.28,0-3.71,6.12-3.71,6.12a11.28,11.28,0,0,0-4.82,1.3,9.11,9.11,0,0,0-3.19,2.74,3.84,3.84,0,0,0-4.24,1,11.35,11.35,0,0,0-2.23,4.06L214.52,432a3.62,3.62,0,0,0-.34,1.73,2.21,2.21,0,0,0,2.12,1.76A3.62,3.62,0,0,0,219,434.3a12.42,12.42,0,0,0,1.79-2.23l.33,2.32s.55,3.67,3.52,3.89c2.05.16,4.27-2.22,4.27-2.22l5.19-.56.74,5.19a4.94,4.94,0,0,0,4.83,3.34c1.86,0,4.26-3.15,4.26-3.15l4.83,1.85s5.56,3.9,8.16,2.6a3.59,3.59,0,0,0,1.86-4.08,14.12,14.12,0,0,0,2.59-4.27C262.07,434.76,260.78,431.05,260,426.78Z" style="fill: rgb(255, 190, 157); transform-origin: 237.873px 428.908px;" id="el9950kqkvb45" class="animable"></path><path d="M221,433.5a18.55,18.55,0,0,1,.19-5.51,18.19,18.19,0,0,1,1.34-5.34c.14,0-.41,2.43-.83,5.42S221.19,433.5,221,433.5Z" style="fill: rgb(235, 153, 110); transform-origin: 221.715px 428.075px;" id="el9ucpfyzs74m" class="animable"></path><path d="M229.11,428.62a14.83,14.83,0,0,1,.44,3.86,6.64,6.64,0,0,1-.28,2.79c-.29.7-.7,1-.73.92s.21-.39.38-1a8.73,8.73,0,0,0,.11-2.65A14.38,14.38,0,0,1,229.11,428.62Z" style="fill: rgb(235, 153, 110); transform-origin: 229.065px 432.411px;" id="elqdzrs5z5dz" class="animable"></path><path d="M232.57,426.41c.1.1-.58,1-1.53,1.92s-1.79,1.66-1.9,1.56.58-1,1.53-1.92S232.47,426.31,232.57,426.41Z" style="fill: rgb(235, 153, 110); transform-origin: 230.854px 428.15px;" id="el5ym8a0oklh" class="animable"></path><path d="M233.26,416.43a18.38,18.38,0,0,1,.12,2.82c0,1.75.07,4.15.21,6.8s.35,5.05.5,6.79a16.19,16.19,0,0,1,.18,2.82,13.61,13.61,0,0,1-.54-2.78c-.25-1.73-.51-4.13-.66-6.8s-.13-5.08-.06-6.83A13.65,13.65,0,0,1,233.26,416.43Z" style="fill: rgb(235, 153, 110); transform-origin: 233.616px 426.045px;" id="elblwzfkngyw7" class="animable"></path><path d="M252.72,418.42s-.22.5-.57,1.4a26.31,26.31,0,0,0-1.16,3.92c-.18.86-.37,1.79-.58,2.78a18.62,18.62,0,0,1-.88,3.18,7.18,7.18,0,0,1-2.11,3,4.35,4.35,0,0,1-3.84.95,3.42,3.42,0,0,1-1.8-1.06,3.66,3.66,0,0,1-.81-1.85,18.85,18.85,0,0,1-.07-3.66,31.16,31.16,0,0,1,.94-6.06,28.21,28.21,0,0,1,1.32-3.92c.19-.45.34-.79.46-1a1.46,1.46,0,0,1,.2-.34,11.3,11.3,0,0,1-.47,1.43,35.22,35.22,0,0,0-1.15,3.93,33.33,33.33,0,0,0-.82,6,19.15,19.15,0,0,0,.09,3.54,3.22,3.22,0,0,0,.7,1.6,3,3,0,0,0,1.53.9,3.86,3.86,0,0,0,3.4-.85,6.91,6.91,0,0,0,2-2.8,53,53,0,0,0,1.55-5.87,21.54,21.54,0,0,1,1.32-3.91,9.09,9.09,0,0,1,.53-1C252.62,418.52,252.7,418.41,252.72,418.42Z" style="fill: rgb(235, 153, 110); transform-origin: 246.781px 424.762px;" id="elil2ge5x2mo" class="animable"></path><path d="M254.68,420.67a5.27,5.27,0,0,1-4.27,4.52,21.42,21.42,0,0,0,2.49-1.92A21.16,21.16,0,0,0,254.68,420.67Z" style="fill: rgb(235, 153, 110); transform-origin: 252.545px 422.93px;" id="el5xugdr6541c" class="animable"></path><path d="M243.94,433.6a12.32,12.32,0,0,1,.25,4.24,19.18,19.18,0,0,1-.53,3.74l0,.07h0a.28.28,0,0,1-.4-.18c0-.1,0-.14,0-.14s0,.05.07.09.14.08.17,0l-.06.08c0-.68.15-2.1.24-3.74A29.63,29.63,0,0,1,243.94,433.6Z" style="fill: rgb(235, 153, 110); transform-origin: 243.765px 437.641px;" id="elcz1khabmzc" class="animable"></path><path d="M255.71,429.46a9.85,9.85,0,0,1-1.36,1.76,25.55,25.55,0,0,0-3,4.32,11.43,11.43,0,0,0-1.4,5c0,1.35.23,2.17.14,2.19a4.55,4.55,0,0,1-.51-2.19,10.49,10.49,0,0,1,1.31-5.25,20.13,20.13,0,0,1,3.24-4.32A8.6,8.6,0,0,1,255.71,429.46Z" style="fill: rgb(235, 153, 110); transform-origin: 252.644px 436.095px;" id="elw95mt683gkc" class="animable"></path><path d="M253.66,438.68a5.51,5.51,0,0,1,2.28-6.08c3.49-2.48,13.94-9,14.16-9s12.27-4,17.34-4.52,27.26,10.5,27.26,10.5,5.15,7.42,4.32,14.54-5.47,7.53-5.47,7.53l-6.44-1.57-6.64-1.27s-14.69,4.09-17,3.34-3.11-3.26-.61-4.62,9.69-3.49,9.69-3.49l5.53-2.34-18,2.57s-15.22,3-17,2.58-2.05-1.75-2.2-3c0,0-6.13,3-7.95,1.36S250.31,440,253.66,438.68Z" style="fill: rgb(255, 190, 157); transform-origin: 285.233px 435.652px;" id="elqoy11lxyhpa" class="animable"></path><path d="M292.51,434.3a6.26,6.26,0,0,1-1.35.07c-.86,0-2.11,0-3.65.1a28.55,28.55,0,0,0-5.33.75,17.14,17.14,0,0,0-3,1.07c-1,.46-2,1-3,1.6A23.12,23.12,0,0,1,273,439.4a11.64,11.64,0,0,1-3.19.69,24.15,24.15,0,0,0-5.34.6,6.05,6.05,0,0,0-2.9,2,8.54,8.54,0,0,0-.67,1.15s0-.13.06-.35a3.63,3.63,0,0,1,.44-.91,5.93,5.93,0,0,1,2.95-2.23,22.49,22.49,0,0,1,5.42-.73,14.59,14.59,0,0,0,6.12-2.17c1-.57,2-1.15,3.06-1.62a17,17,0,0,1,3.07-1.06,24.82,24.82,0,0,1,5.43-.65c1.56,0,2.81,0,3.68.06A7.4,7.4,0,0,1,292.51,434.3Z" style="fill: rgb(235, 153, 110); transform-origin: 276.705px 438.98px;" id="els0yl5g81tw" class="animable"></path><path d="M287.07,426.71a1.71,1.71,0,0,1-.33.17c-.21.1-.54.23-1,.38a26.2,26.2,0,0,1-3.75.86c-1.59.28-3.51.49-5.55,1a29,29,0,0,0-6.29,2.75,76.92,76.92,0,0,1-11.52,5.22c-1.52.54-2.77.94-3.64,1.2a7.37,7.37,0,0,1-1.36.35,7.15,7.15,0,0,1,1.3-.54l3.57-1.36a90.68,90.68,0,0,0,11.4-5.33,28.27,28.27,0,0,1,6.42-2.76,50.5,50.5,0,0,1,5.62-.94,33.69,33.69,0,0,0,3.74-.69A12.77,12.77,0,0,1,287.07,426.71Z" style="fill: rgb(235, 153, 110); transform-origin: 270.35px 432.675px;" id="el1erlp0xb0lm" class="animable"></path><path d="M301.68,431a6.9,6.9,0,0,1-.29-1.2,6,6,0,0,0-3.7-4.13,7.34,7.34,0,0,1-1.16-.42c0-.06.5-.12,1.28.07a5.46,5.46,0,0,1,2.63,1.61,5.4,5.4,0,0,1,1.31,2.79A2.19,2.19,0,0,1,301.68,431Z" style="fill: rgb(235, 153, 110); transform-origin: 299.172px 428.096px;" id="elkzi40c899yk" class="animable"></path><path d="M310,442.23a15,15,0,0,0-.15-1.68,6,6,0,0,0-2.18-3.26,13.59,13.59,0,0,0-3.61-1.87,6.32,6.32,0,0,1-1.6-.67,5.1,5.1,0,0,1,1.71.32,11.21,11.21,0,0,1,3.83,1.81,5.78,5.78,0,0,1,2.21,3.61A2.47,2.47,0,0,1,310,442.23Z" style="fill: rgb(235, 153, 110); transform-origin: 306.371px 438.49px;" id="elpt046k5hsb" class="animable"></path><path d="M260.94,443.83a2.7,2.7,0,0,1-.87.52,19.62,19.62,0,0,1-2.58,1,14.09,14.09,0,0,1-1.86.51,4.93,4.93,0,0,1-2.26-.23,3.12,3.12,0,0,1-1.82-1.76,4.76,4.76,0,0,1-.48-2.66,2.82,2.82,0,0,1,1-1.76,6.44,6.44,0,0,1,1.53-1l-.13.3a5,5,0,0,1,.26-3.76,7.73,7.73,0,0,1,1.89-2.29,11.67,11.67,0,0,1,1.58-1.11,2.11,2.11,0,0,1,.63-.31c.05.07-.81.57-2,1.65a8,8,0,0,0-1.72,2.25,4.61,4.61,0,0,0-.16,3.43l.06.19-.19.1c-.94.49-2.07,1.21-2.18,2.39a4.39,4.39,0,0,0,.42,2.37,2.64,2.64,0,0,0,1.52,1.52,4.58,4.58,0,0,0,2,.26,17.39,17.39,0,0,0,1.82-.43c1.11-.31,2-.62,2.6-.84A4.73,4.73,0,0,1,260.94,443.83Z" style="fill: rgb(235, 153, 110); transform-origin: 255.991px 438.591px;" id="eldlpjvh1zfnk" class="animable"></path><path d="M338.42,241.54c-2.17-21.66-6.76-43.22-5.81-65L314.8,187.66c.89,8.62-6.86,15.3-11.35,22.7a33.24,33.24,0,0,0-1.93,30.19c1.6,3.6,3.87,7,4.46,10.9,1,6.58-3.07,13.27-1.57,19.76,1.72,7.47,10.86,11.57,18.23,9.47s12.65-9,14.82-16.31S339.18,249.17,338.42,241.54Z" style="fill: rgb(38, 50, 56); transform-origin: 318.916px 228.884px;" id="eloh23rgnq75i" class="animable"></path><path d="M315.76,184a30.32,30.32,0,0,1,50-17.06c3.25,2.91,5.91,6.54,9.67,8.75,4.25,2.49,4.8,1.65,9.48,3.16s13.85,13.73,14,18.65l3.64,21.4c.12,5.05-6.18,8.3-11.06,7s-8.32-5.61-11.12-9.83-5.46-8.79-9.77-11.44c-7.15-4.39-16.33-2.15-24.43,0s-17.51,4-24.25-1C316.16,199.28,314.44,191.08,315.76,184Z" style="fill: rgb(38, 50, 56); transform-origin: 358.946px 192.712px;" id="elxlypgqwhwkt" class="animable"></path><path d="M313.18,215c0-14.08,8.29-31.85,22.35-31.21l44.3,8.4a8.23,8.23,0,0,1,7.86,7.9l1.67,105.5.3,0s-15.39,38.7-44.79,31.44c-5.83-1.44-1.52-15.95-3.06-22.31l-.29.06c-.06-.77-.11-1.48-.17-2.21a69.14,69.14,0,0,1-1.07-14.43h0c-.61-8.49-.82-12-.82-11.89s-18.1-1.9-23.22-25.05C313.7,249.74,313.13,230.65,313.18,215Z" style="fill: rgb(255, 190, 157); transform-origin: 351.419px 260.855px;" id="elf3nxiu9il6a" class="animable"></path><path d="M321,233.42a3,3,0,0,0,3.07,2.85,2.87,2.87,0,0,0,2.93-2.89,3,3,0,0,0-3.07-2.85A2.87,2.87,0,0,0,321,233.42Z" style="fill: rgb(38, 50, 56); transform-origin: 324px 233.4px;" id="elbmu4skt3t1" class="animable"></path><path d="M317.91,224.67c.39.37,2.56-1.45,5.79-1.63s5.69,1.28,6,.87c.17-.19-.26-.87-1.33-1.56a8.23,8.23,0,0,0-4.85-1.18A7.91,7.91,0,0,0,319,223C318,223.78,317.71,224.51,317.91,224.67Z" style="fill: rgb(38, 50, 56); transform-origin: 323.793px 222.935px;" id="el85traptdfn3" class="animable"></path><path d="M350.1,231.79a3,3,0,0,0,3.07,2.85,2.87,2.87,0,0,0,2.93-2.89A3,3,0,0,0,353,228.9,2.87,2.87,0,0,0,350.1,231.79Z" style="fill: rgb(38, 50, 56); transform-origin: 353.1px 231.77px;" id="elgewccryjdy" class="animable"></path><path d="M349.66,223.37c.39.36,2.56-1.45,5.79-1.64s5.69,1.29,6,.87c.16-.19-.25-.87-1.33-1.56a8.3,8.3,0,0,0-4.85-1.18,8,8,0,0,0-4.58,1.79C349.76,222.47,349.46,223.2,349.66,223.37Z" style="fill: rgb(38, 50, 56); transform-origin: 355.542px 221.629px;" id="el0ml8a0v9qswm" class="animable"></path><path d="M339.39,248c0-.19-2-.41-5.3-.63-.83,0-1.62-.16-1.79-.71a4.23,4.23,0,0,1,.4-2.48c.66-2,1.34-4.17,2.06-6.41,2.85-9.14,4.85-16.63,4.48-16.74s-3,7.2-5.82,16.33l-1.95,6.46a4.7,4.7,0,0,0-.23,3.25,2.06,2.06,0,0,0,1.43,1.13,5.54,5.54,0,0,0,1.41.11C337.36,248.29,339.39,248.18,339.39,248Z" style="fill: rgb(38, 50, 56); transform-origin: 335.221px 234.673px;" id="elgzl2s0fgws" class="animable"></path><path d="M339.46,286.31a59.62,59.62,0,0,0,30.8-10.24s-6.92,16.75-30.44,16Z" style="fill: rgb(235, 153, 110); transform-origin: 354.86px 284.082px;" id="elzjf5grq7rp" class="animable"></path><path d="M341.22,255.69a5.8,5.8,0,0,1,5.08-2.47,5.26,5.26,0,0,1,3.78,1.74,3.37,3.37,0,0,1,.49,3.83,3.91,3.91,0,0,1-4.16,1.33,12.12,12.12,0,0,1-4.27-2.22,3.52,3.52,0,0,1-1-.9,1.08,1.08,0,0,1-.07-1.2" style="fill: rgb(235, 153, 110); transform-origin: 345.938px 256.743px;" id="el0ahwg634blk" class="animable"></path><path d="M349,249.66c-.53,0-.33,3.5-3.17,6.16s-6.6,2.51-6.6,3c0,.22.87.63,2.45.58a8.73,8.73,0,0,0,5.52-2.3,7.59,7.59,0,0,0,2.43-5.16C349.7,250.47,349.25,249.62,349,249.66Z" style="fill: rgb(38, 50, 56); transform-origin: 344.434px 254.531px;" id="elpc94iwjpf3t" class="animable"></path><path d="M348.11,211.14c.37.86,3.57.25,7.38.48s6.94,1.07,7.39.25c.2-.39-.38-1.18-1.66-2a12.86,12.86,0,0,0-11.26-.56C348.61,210,348,210.73,348.11,211.14Z" style="fill: rgb(38, 50, 56); transform-origin: 355.508px 210.248px;" id="elh916jhaebvk" class="animable"></path><path d="M318.53,215.26c.61.7,2.79-.19,5.46-.39s5,.2,5.44-.6c.21-.39-.19-1.1-1.23-1.73a7.89,7.89,0,0,0-8.78.8C318.52,214.15,318.26,214.92,318.53,215.26Z" style="fill: rgb(38, 50, 56); transform-origin: 323.956px 213.545px;" id="el3muk8f0b1hj" class="animable"></path><path d="M335.93,177.77l1.82-2.66a150.25,150.25,0,0,1,39.95,7.58c5.16,1.73,10.4,3.86,14.1,7.85,5.1,5.48,6.35,13.4,7.35,20.82,3.82,28.23,7.34,57.34.1,84.9-2.36-3.32-6.66-4.61-10.7-5.14s-8.25-.51-12-2.14a16.06,16.06,0,0,1-8.62-9.74,19.21,19.21,0,0,1,.63-13.11c1.89-4.63,5.48-9.21,4.23-14-1.31-5.07-7.38-7.64-9.08-12.59-2.93-8.56,8.8-17.14,5.79-25.67-1.12-3.15-4.06-5.31-7.14-6.61s-6.4-1.93-9.51-3.14A27.44,27.44,0,0,1,335.93,177.77Z" style="fill: rgb(38, 50, 56); transform-origin: 369.683px 235.685px;" id="eloe0s6uosl8" class="animable"></path><path d="M405.11,191.72c-14.54-20.38-24.39-22.85-38.07-23.61l19,42.6c2.85,6.86,6.77,15.18,7.38,22.57.72,8.77-2.32,16.11-6.39,23.9-4.88,9.36-10.24,18.28-18.63,24.68s-27.07,14.45-36.77,10.3l13.53,7.57,32.32.12,37.65.15s4.4-3.86,8.27-13.82C433.11,261.23,421.33,214.45,405.11,191.72Z" style="fill: #81C408; transform-origin: 379.275px 234.055px;" id="elbcy9jz7vzis" class="animable"></path><path d="M431.92,324.46s-8.1-16.62-18.67-25.76-17.06-9.05-32.14-7.77-36.18,3.66-41.18,2.39l-.47-7c-2.48-.25-12.65-5.2-14.63-8.19-3.78,3.87-5.43,8-4.57,12.39l-2.47.93A15.79,15.79,0,0,0,307.87,310c.94,3.6,3.21,5.81,7.77,6.6,18.1,3.13,66.49-9.95,81.06-10S431.92,324.46,431.92,324.46Z" style="fill: #81C408; transform-origin: 369.673px 301.295px;" id="elpzr6vh7pffb" class="animable"></path><path d="M314,316.41a7.54,7.54,0,0,1,1.27.07c.82.08,2,.21,3.59.32a108.44,108.44,0,0,0,13.26.22,117.85,117.85,0,0,0,19.46-2.64c3.62-.79,7.39-1.75,11.26-2.87l11.94-3.69c8.19-2.49,16.4-4.19,23.91-3.45a45.46,45.46,0,0,1,18.76,6,43.64,43.64,0,0,1,10.33,8.41,31.7,31.7,0,0,1,2.28,2.82,8.14,8.14,0,0,1,.71,1,5.45,5.45,0,0,1-.84-.94c-.51-.65-1.32-1.56-2.39-2.7a45.48,45.48,0,0,0-28.92-13.9c-7.36-.68-15.44,1-23.6,3.48-4.09,1.23-8.06,2.54-11.95,3.67s-7.68,2.07-11.33,2.84a112.62,112.62,0,0,1-19.6,2.48,94.92,94.92,0,0,1-13.31-.49c-1.56-.16-2.77-.34-3.58-.47A7.33,7.33,0,0,1,314,316.41Z" style="fill: rgb(38, 50, 56); transform-origin: 372.385px 313.398px;" id="elyilzkyu7thi" class="animable"></path><path d="M432.79,319c-18.26-23.74-53.27-32.81-80.77-20.93l-29,6.15c-7.65,1.32-19.92,3.81-20.5,10.9a39.36,39.36,0,0,0,4.71,21.62c6.74,11.74,3.08,27.47,9.82,39.21,3.18,5.55,6.43,11.18,11.07,15.59s10.94,7.5,17.3,6.81c7.08-.76,12.88-5.93,17.38-11.45,9.69-11.89,15.74-26.33,24.81-38.69s19.77-21.46,38.83-22.63c3.46-.22,13.33,4.39,13.33,4.39C440.05,328.57,433.66,320.11,432.79,319Z" style="fill: #81C408; transform-origin: 371.101px 345.655px;" id="elv9zf74ttad" class="animable"></path><g id="eljdoxd3qrsi"><g style="opacity: 0.3; transform-origin: 367.866px 314.789px;" class="animable" id="elqryrih26c4o"><path d="M393.76,304.88c-12.61,0-25,6.06-37.22,8.76-49.16,10.82-49.16-7.72-49.16-7.72h0c-1.54,8.71,6.64,12.71,15.25,14.71,16.44,3.8,34,5.84,45.86,2.05,9.56-3,19.54-5.23,29.19-8s23.55-1.71,30.86,5.15C422,309.08,406.37,304.85,393.76,304.88Z" id="el1f4lt3kovj3i" class="animable" style="transform-origin: 367.866px 314.789px;"></path></g></g><g id="el2pbukyapb7b"><g style="opacity: 0.3; transform-origin: 351.665px 305.931px;" class="animable" id="el8o74uz8nkp"><path d="M329.87,303.55a9.86,9.86,0,0,0,6.2,5.37,21.73,21.73,0,0,0,8.39.72c10.28-.7,20.16-4.13,29.89-7.53-7.78-.27-15.31,2.44-22.94,4s-16.23,1.66-22.43-3" id="elvxl8l0jo6s" class="animable" style="transform-origin: 351.665px 305.931px;"></path></g></g><path d="M435.26,326.61s-.09-.07-.23-.22l-.61-.7c-.53-.63-1.34-1.51-2.41-2.63a31.38,31.38,0,0,0-10.69-7.35,30.53,30.53,0,0,0-8.78-1.9,45.89,45.89,0,0,0-10.33.33c-7.26,1-14.93,3.55-23.07,5.87s-15.91,4.74-23.3,5.13a85.39,85.39,0,0,1-19.45-1.39c-5.46-1-9.81-2.16-12.82-2.91l-3.46-.88-.89-.24-.31-.1a1.09,1.09,0,0,1,.32,0l.91.19,3.48.79c3,.69,7.38,1.78,12.84,2.74a86.29,86.29,0,0,0,19.35,1.28c7.31-.41,15.09-2.72,23.19-5.15s15.82-4.88,23.14-5.85a46.17,46.17,0,0,1,10.44-.28,28.21,28.21,0,0,1,19.57,9.54c1.06,1.15,1.85,2.05,2.35,2.7l.57.73Z" id="elif7epsvulo" class="animable" style="transform-origin: 377.085px 319.889px;"></path><path d="M416.9,302.15a1.36,1.36,0,0,1-.21-.17l-.58-.53c-.49-.48-1.26-1.15-2.26-2a44.81,44.81,0,0,0-9.4-5.84,54.8,54.8,0,0,0-15.74-4.52,79.93,79.93,0,0,0-20.09.05,190.68,190.68,0,0,0-19.84,3.7,29.32,29.32,0,0,1-8.83.7,14.26,14.26,0,0,1-7.23-2.62,17.76,17.76,0,0,1-4.3-4.7,29.14,29.14,0,0,1-2.23-4.25c-.51-1.21-.85-2.18-1.07-2.84l-.23-.75a.88.88,0,0,1-.06-.26s.05.08.11.24.17.44.28.74c.25.64.62,1.59,1.16,2.79a30.31,30.31,0,0,0,2.29,4.17,17.57,17.57,0,0,0,4.27,4.56,14,14,0,0,0,7.06,2.49,29.17,29.17,0,0,0,8.68-.74,181.32,181.32,0,0,1,19.88-3.74,79,79,0,0,1,20.22,0,54.48,54.48,0,0,1,15.83,4.67,42.51,42.51,0,0,1,9.37,6,29.56,29.56,0,0,1,2.21,2.08l.54.56C416.85,302.08,416.91,302.14,416.9,302.15Z" id="elccsa76fsmrr" class="animable" style="transform-origin: 370.866px 290.135px;"></path><path d="M411,301.66l-.25,0-.74-.12-2.85-.47A102.69,102.69,0,0,0,396.62,300a97.07,97.07,0,0,0-15.7.5A160.19,160.19,0,0,0,362,304.21c-6.64,1.6-13.1,3-19.09,2.91a33.9,33.9,0,0,1-8.39-1,16.82,16.82,0,0,1-6.48-3.51,26.39,26.39,0,0,1-6.42-8.44,18.86,18.86,0,0,1-1.39-3.65.88.88,0,0,1,.11.23l.27.7c.25.62.63,1.51,1.19,2.62a27,27,0,0,0,6.48,8.26,16.63,16.63,0,0,0,6.35,3.37,33.59,33.59,0,0,0,8.28.95c5.92,0,12.33-1.33,19-2.94a155,155,0,0,1,19-3.7,95.65,95.65,0,0,1,15.77-.39,91.83,91.83,0,0,1,10.56,1.23c1.24.23,2.19.42,2.84.57l.73.17C410.93,301.62,411,301.65,411,301.66Z" id="el8ycvs7jar28" class="animable" style="transform-origin: 365.615px 298.822px;"></path><path d="M411.92,256.78a13,13,0,0,1-.38,1.68,17.67,17.67,0,0,1-.58,1.94c-.26.75-.51,1.61-.91,2.52s-.79,1.93-1.32,3-1.12,2.14-1.77,3.29A46.57,46.57,0,0,1,395.75,282c-1.05.8-2,1.57-3,2.19s-1.9,1.21-2.77,1.7-1.67.89-2.37,1.24a16.72,16.72,0,0,1-1.85.83,11.5,11.5,0,0,1-1.61.6,10.58,10.58,0,0,1,1.53-.78c.5-.23,1.11-.52,1.8-.91s1.49-.76,2.32-1.3,1.77-1.06,2.71-1.74,1.93-1.41,3-2.2a49,49,0,0,0,11.1-12.68c.65-1.13,1.29-2.19,1.79-3.23s1-2,1.37-2.92.69-1.74,1-2.47.49-1.38.65-1.9A10.11,10.11,0,0,1,411.92,256.78Z" id="elf1nsrhbockl" class="animable" style="transform-origin: 398.035px 272.67px;"></path><path d="M410.41,316.39a4.78,4.78,0,0,1-.81-.07l-1-.13c-.38-.05-.83,0-1.32-.07a23.8,23.8,0,0,0-8.32,1.29,39.54,39.54,0,0,0-5.37,2.3,63.8,63.8,0,0,0-5.77,3.44c-3.94,2.63-8.06,5.85-12.48,9.1L352.78,349l-6.89,5L344,355.3a3.79,3.79,0,0,1-.68.44,5.61,5.61,0,0,1,.61-.52l1.83-1.42,6.79-5.15,22.5-16.82c4.42-3.24,8.54-6.46,12.53-9.08a62.93,62.93,0,0,1,5.83-3.43,39.92,39.92,0,0,1,5.46-2.26,23.08,23.08,0,0,1,8.44-1.14c.5,0,.95.05,1.33.11l1,.18A4.47,4.47,0,0,1,410.41,316.39Z" id="el4604x6nlv6s" class="animable" style="transform-origin: 376.865px 335.815px;"></path><path d="M442.68,347.05a7.31,7.31,0,0,1-.44-1.41c-.24-.91-.58-2.24-1.06-3.86a38.48,38.48,0,0,0-2.05-5.55,21,21,0,0,0-4.05-5.9,13.89,13.89,0,0,0-6.06-3.67,16.84,16.84,0,0,0-5.82-.51,47.46,47.46,0,0,0-5.38.92,1.22,1.22,0,0,1,.35-.16c.24-.09.59-.21,1-.34a21.27,21.27,0,0,1,4-.78,16.4,16.4,0,0,1,6,.41,14.15,14.15,0,0,1,6.3,3.76,20.81,20.81,0,0,1,4.12,6.07,36.67,36.67,0,0,1,2,5.65c.43,1.64.72,3,.9,3.92A8.45,8.45,0,0,1,442.68,347.05Z" id="elb9apnyqv8k6" class="animable" style="transform-origin: 430.25px 336.365px;"></path></g><g id="freepik--speech-bubble--inject-242" class="animable" style="transform-origin: 423.29px 131.088px;"><g id="elajl0urc5fq"><circle cx="423.29" cy="124.8" r="35.64" style="fill: rgb(255, 255, 255); transform-origin: 423.29px 124.8px; transform: rotate(-2.66deg);" class="animable" id="el7h6h0dsmj6q"></circle></g><path d="M403.46,166a10.6,10.6,0,0,1,1-.23,4.64,4.64,0,0,1,2.79.53,4.51,4.51,0,0,1,1.5,1.26,3.93,3.93,0,0,1,.75,2.09,4.27,4.27,0,0,1-7.17,3.57,4,4,0,0,1-1.22-1.85,4.55,4.55,0,0,1-.11-2,4.71,4.71,0,0,1,1.26-2.55c.48-.49.83-.66.81-.69a.92.92,0,0,0-.25.12,2.12,2.12,0,0,0-.29.18,4.07,4.07,0,0,0-.36.3,4.78,4.78,0,0,0-1.32,4.67,4.13,4.13,0,0,0,1.28,2,4.79,4.79,0,0,0,2.37,1.14,4.3,4.3,0,0,0,4.78-2.38,4.87,4.87,0,0,0,.52-2.58,4.17,4.17,0,0,0-.83-2.23,4.47,4.47,0,0,0-1.61-1.31,4.64,4.64,0,0,0-2.92-.45,2.47,2.47,0,0,0-.45.11,1.78,1.78,0,0,0-.33.12C403.54,165.93,403.45,166,403.46,166Z" style="fill: rgb(38, 50, 56); transform-origin: 405.253px 170.077px;" id="elgen0n272zkn" class="animable"></path><path d="M393.61,145.09l-.29-.51-.88-1.46c-.19-.33-.41-.69-.65-1.08s-.42-.87-.66-1.37-.49-1-.76-1.6a6.05,6.05,0,0,1-.37-.9c-.11-.32-.23-.64-.35-1a34.2,34.2,0,0,1-2.11-10.11,35.87,35.87,0,0,1,1.78-13.52l.63-1.82c.25-.61.54-1.2.81-1.81.13-.3.27-.6.41-.91a5.86,5.86,0,0,1,.46-.9l1-1.79c.17-.3.34-.6.52-.9l.62-.86,1.25-1.74c.43-.57.94-1.1,1.42-1.66l.73-.83c.12-.13.24-.28.37-.41l.41-.38a33,33,0,0,1,3.43-3c.62-.45,1.22-1,1.88-1.39l2-1.23c.34-.2.67-.43,1-.61l1.09-.52c.73-.34,1.45-.72,2.2-1a39,39,0,0,1,4.73-1.54l1.22-.31.62-.15.63-.09,2.53-.38c.86-.09,1.72-.11,2.59-.16.43,0,.87-.07,1.31,0l1.31.06a39.71,39.71,0,0,1,5.29.55l2.63.63.66.16c.22.06.43.14.65.21l1.29.45,1.3.44,1.26.56,1.26.58.63.28c.21.11.4.23.61.35l2.42,1.39,2.3,1.64A35.43,35.43,0,0,1,457.59,115c.24.91.47,1.83.7,2.73l.42,2.77.1.69,0,.69.07,1.38.07,1.38-.06,1.37-.06,1.37,0,.68-.09.67c-.13.9-.25,1.79-.37,2.68a39.73,39.73,0,0,1-1.41,5.14l-.42,1.24c-.14.42-.35.8-.52,1.2-.37.79-.69,1.59-1.09,2.35s-.85,1.49-1.27,2.23l-.32.55c-.12.18-.25.35-.37.52l-.73,1a38.1,38.1,0,0,1-3.15,3.84c-.57.59-1.18,1.12-1.76,1.68l-.89.82c-.29.27-.63.5-.94.74l-1.88,1.44c-.64.45-1.33.83-2,1.24a32.37,32.37,0,0,1-4,2.12l-.5.24-.52.2-1,.37c-.7.24-1.37.53-2.06.73l-2.08.53-1,.26-1,.16-2,.31a6.78,6.78,0,0,1-1,.1l-1,0c-.66,0-1.32.09-2,.1l-1.93-.08a35.68,35.68,0,0,1-13.24-3.26c-.46-.21-.92-.4-1.36-.61l-1.24-.72-1.2-.68c-.2-.12-.4-.22-.58-.34l-.53-.38-2-1.44c-.63-.48-1.17-1-1.72-1.46l-.78-.68a7.64,7.64,0,0,1-.71-.67L396.82,149c-.37-.4-.73-.76-1-1.11l-.77-1-1-1.35c-.23-.3-.36-.45-.36-.45l.34.47c.23.32.57.77,1,1.37l.75,1c.3.36.66.72,1,1.12l1.2,1.31a6.58,6.58,0,0,0,.71.68l.78.69c.54.46,1.08,1,1.71,1.47l2,1.46.53.38c.19.13.39.23.58.35l1.2.69,1.25.73,1.36.62a35.7,35.7,0,0,0,13.31,3.32l1.94.09c.65,0,1.32-.06,2-.09l1-.06a5.86,5.86,0,0,0,1-.09l2.05-.31,1-.16,1-.26,2.1-.53c.69-.2,1.37-.48,2.07-.72l1.05-.38c.17-.07.35-.12.52-.2l.51-.24a33.65,33.65,0,0,0,4.07-2.13c.66-.41,1.35-.79,2-1.24l1.9-1.45c.32-.25.65-.47,1-.74l.89-.83c.58-.56,1.21-1.1,1.78-1.69a38.74,38.74,0,0,0,3.18-3.87c.24-.35.49-.69.74-1,.12-.17.25-.34.37-.52l.32-.56,1.29-2.24c.4-.77.73-1.58,1.1-2.37.17-.41.39-.8.53-1.21l.42-1.26a38.78,38.78,0,0,0,1.42-5.18c.13-.89.26-1.8.38-2.7l.1-.68,0-.69.06-1.37.06-1.39-.07-1.39-.08-1.39,0-.71-.11-.69-.42-2.79c-.23-.92-.46-1.84-.7-2.76a35.62,35.62,0,0,0-12.84-18.79l-2.32-1.66-2.45-1.4c-.2-.12-.4-.24-.61-.35l-.64-.29-1.27-.58-1.27-.56-1.31-.45-1.31-.45-.65-.22-.67-.15c-.88-.22-1.77-.43-2.65-.63a38.86,38.86,0,0,0-5.34-.56l-1.32-.06c-.44,0-.88,0-1.32,0-.88.06-1.75.07-2.61.16l-2.56.39-.63.1c-.21,0-.42.1-.62.15l-1.24.32a37.29,37.29,0,0,0-4.76,1.55c-.76.32-1.49.71-2.23,1.05l-1.09.53c-.36.18-.69.41-1,.62l-2,1.24c-.66.44-1.27.95-1.89,1.41a33.48,33.48,0,0,0-3.46,3l-.41.39c-.13.13-.25.28-.37.42s-.49.56-.74.83c-.48.57-1,1.1-1.42,1.67l-1.26,1.76-.62.87c-.18.3-.35.61-.52.91l-1,1.8a6.41,6.41,0,0,0-.45.91l-.42.92c-.27.61-.56,1.21-.8,1.82s-.42,1.23-.63,1.84a35.8,35.8,0,0,0-1.74,13.6,34,34,0,0,0,2.17,10.15l.36,1a6.05,6.05,0,0,0,.37.9l.78,1.6c.25.49.45.95.68,1.36l.66,1.07.91,1.45C393.49,144.92,393.61,145.09,393.61,145.09Z" style="fill: rgb(38, 50, 56); transform-origin: 423.312px 124.82px;" id="elk5lx6j7a02h" class="animable"></path><polygon points="405.29 125.71 410.57 120.43 420.75 129.48 440.73 110.25 445.63 115.53 420 139.66 405.29 125.71" style="fill: #81C408; transform-origin: 425.46px 124.955px;" id="elfyubdd2gn8e" class="animable"></polygon></g><defs>     <filter id="active" height="200%">         <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#32DFEC" flood-opacity="1" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>    </filter>    <filter id="hover" height="200%">        <feMorphology in="SourceAlpha" result="DILATED" operator="dilate" radius="2"></feMorphology>                <feFlood flood-color="#ff0000" flood-opacity="0.5" result="PINK"></feFlood>        <feComposite in="PINK" in2="DILATED" operator="in" result="OUTLINE"></feComposite>        <feMerge>            <feMergeNode in="OUTLINE"></feMergeNode>            <feMergeNode in="SourceGraphic"></feMergeNode>        </feMerge>            <feColorMatrix type="matrix" values="0   0   0   0   0                0   1   0   0   0                0   0   0   0   0                0   0   0   1   0 "></feColorMatrix>    </filter></defs></svg>                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Banner Section End -->
+
+
+
+
+
+        <!-- Fact Start -->
+        <div class="container-fluid py-5">
+            <div class="container">
+                <div class="bg-light p-5 rounded">
+                    <div class="row g-4 justify-content-center">
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>satisfied customers</h4>
+                                <h1>1963</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>quality of service</h4>
+                                <h1>99%</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>quality certificates</h4>
+                                <h1>33</h1>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-lg-6 col-xl-3">
+                            <div class="counter bg-white rounded p-5">
+                                <i class="fa fa-users text-secondary"></i>
+                                <h4>Available Products</h4>
+                                <h1>789</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fact Start -->
+
+
+<!-- Testimonial Start -->
+<div class="container-fluid testimonial py-5">
+    <div class="container py-5">
+        <div class="testimonial-header text-center">
+            <h4 class="text-primary">Our Testimonial</h4>
+            <h1 class="display-5 mb-5 text-dark">Our Client Saying!</h1>
+        </div>
+        <div class="owl-carousel testimonial-carousel">
+            <div class="testimonial-item bg-light rounded p-4 shadow-sm">
+                <div class="position-relative">
+                    <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                    <div class="mb-4 pb-4 border-bottom">
+                        <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-nowrap">
+                        <div class="bg-primary rounded-circle overflow-hidden" style="width: 60px; height: 60px;">
+                            <i class="fas fa-user fa-2x text-white d-flex align-items-center justify-content-center h-100"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="text-dark">Client Name</h5>
+                            <p class="text-muted mb-0">Profession</p>
+                            <div class="d-flex pe-5 mt-2">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-4 shadow-sm">
+                <div class="position-relative">
+                    <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                    <div class="mb-4 pb-4 border-bottom">
+                        <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-nowrap">
+                        <div class="bg-primary rounded-circle overflow-hidden" style="width: 60px; height: 60px;">
+                            <i class="fas fa-user fa-2x text-white d-flex align-items-center justify-content-center h-100"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="text-dark">Client Name</h5>
+                            <p class="text-muted mb-0">Profession</p>
+                            <div class="d-flex pe-5 mt-2">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-item bg-light rounded p-4 shadow-sm">
+                <div class="position-relative">
+                    <i class="fa fa-quote-right fa-2x text-secondary position-absolute" style="bottom: 30px; right: 0;"></i>
+                    <div class="mb-4 pb-4 border-bottom">
+                        <p class="mb-0 text-muted">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    </div>
+                    <div class="d-flex align-items-center flex-nowrap">
+                        <div class="bg-primary rounded-circle overflow-hidden" style="width: 60px; height: 60px;">
+                            <i class="fas fa-user fa-2x text-white d-flex align-items-center justify-content-center h-100"></i>
+                        </div>
+                        <div class="ms-4">
+                            <h5 class="text-dark">Client Name</h5>
+                            <p class="text-muted mb-0">Profession</p>
+                            <div class="d-flex pe-5 mt-2">
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-primary"></i>
+                                <i class="fas fa-star text-secondary"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!-- Testimonial End -->
+
+
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+        <div class="container py-5">
+            <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                <div class="row g-4">
+                    <div class="col-lg-3">
+                        <a href="#">
+                            <h1 class="text-primary mb-0">Nature's Way</h1>
+                            <p class="text-secondary mb-0">Natural dietary supplements</p>
+                        </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="position-relative mx-auto">
+                            <input class="form-control border-secondary w-100 py-3 ps-4 pe-5" type="text" placeholder="Search">
+                            <button type="button" class="btn btn-secondary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2"><i class="fa fa-search"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 text-start">
+                        <p class="fs-5 fw-bold text-white">Follow Us</p>
+                        <div class="d-flex">
+                            <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.linkedin.com/in/abdullah-alsaied-849511268/" class="btn btn-lg btn-secondary btn-lg-square rounded-circle me-2"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="btn btn-lg btn-secondary btn-lg-square rounded-circle"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Contact</h5>
+                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3 text-secondary"></i>Suez, Egypt</p>
+                    <p class="mb-2"><i class="fa fa-envelope me-3 text-secondary"></i>abdullahelsaied00@gmail.com</p>
+                    <p class="mb-0"><i class="fa fa-phone-alt me-3 text-secondary"></i>+012 747 17089</p>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Quick Links</h5>
+                    <a href="/" class="btn btn-link">Home</a>
+                    <a href="/about" class="btn btn-link">About Us</a>
+                    <a href="/contact" class="btn btn-link">Contact Us</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Customer Service</h5>
+                    <a href="#" class="btn btn-link">Shipping Policy</a>
+                    <a href="#" class="btn btn-link">Returns Policy</a>
+                    <a href="#" class="btn btn-link">FAQs</a>
+                </div>
+                <div class="col-lg-3 col-md-6">
+                    <h5 class="text-white mb-4">Newsletter</h5>
+                    <p>Subscribe to our newsletter to get the latest updates and offers.</p>
+                    <div class="position-relative w-100 mt-3">
+                        <input class="form-control bg-transparent w-100 py-3 ps-4 pe-5" type="text" placeholder="Your email">
+                        <button type="button" class="btn btn-secondary py-2 px-3 position-absolute top-0 end-0 mt-2 me-2">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid text-secondary py-4">
+            <div class="text-center">
+                &copy; <a href="/" class="text-secondary border-bottom">Nature's Way</a>, All Rights Reserved. 
+                Designed by <a href="https://www.linkedin.com/in/abdullah-alsaied-849511268/" class="text-secondary border-bottom">ABDULLAH ALSAIED FAWZI ALSAIED</a>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
+        
+    <!-- JavaScript Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/waypoints/waypoints.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
